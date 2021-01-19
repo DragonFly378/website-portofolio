@@ -52,9 +52,9 @@ body {
       &:start {
         color: #615aec;
       }
-      .active {
-        color: #0062cc !important;
-      }
+      // .active {
+      //   color: #0062cc !important;
+      // }
       &:hover {
         color: var(--secondary);
       }
@@ -152,6 +152,14 @@ p {
 #active {
   color: var(--primary);
 }
+
+.active {
+  color: var(--primary) !important;
+}
+.hide-element {
+  display: none;
+}
+
 #home {
   padding-top: 20px !important;
 }
@@ -188,5 +196,65 @@ footer {
   .foot-icon i,
   .copyright {
     color: var(--white);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #person-img {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 65%;
+      height: 70%;
+      background-color: var(--primary);
+      border-radius: 30% 70% 70% 30%/30% 40% 60% 70%;
+      z-index: -1;
+      transform: translate(23%, 10%);
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #person-img {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 65%;
+      height: 80%;
+      background-color: var(--primary);
+      border-radius: 30% 70% 70% 30%/30% 40% 60% 70%;
+      z-index: -1;
+      transform: translate(25%, 5%);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #person-img {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 80%;
+      background-color: var(--primary);
+      border-radius: 30% 70% 70% 30%/30% 40% 60% 70%;
+      z-index: -1;
+      transform: translate(5%, 5%);
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #person-img {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 90%;
+      background-color: var(--primary);
+      border-radius: 30% 70% 70% 30%/30% 40% 60% 70%;
+      z-index: -1;
+      transform: translate(10%, 5%);
+    }
   }
 }
