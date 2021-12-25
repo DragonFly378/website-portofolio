@@ -1,0 +1,76 @@
+.projects {
+  margin-top: 160px;
+  padding-bottom: 50px;
+
+  .navbar {
+    margin-top: 40px;
+    box-shadow: 1px 1px 5px #d4baa2;
+    border-radius: 10px;
+    .nav-item {
+      padding-top: 1rem !important;
+    }
+    .navbar-nav {
+      margin: auto;
+      .nav-link {
+        font-weight: 500;
+        color: #3d1d21;
+        &:hover {
+          color: #89222e;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      border: none !important;
+      outline: none !important;
+      font-size: 30px !important;
+    }
+  }
+
+  .card-work {
+    height: 430px;
+    margin-top: 25px;
+    padding: 50px 20px 30px;
+    background: #89222e;
+    border-radius: 20px;
+    color: #fdfbe8;
+  }
+  img {
+    height: 130px;
+    margin-bottom: 35px;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .desc {
+    min-height: 96px;
+  }
+  a {
+    color: #89222e;
+  }
+  .see-more {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+    color: #89222e;
+    padding: 10px 30px;
+    border: 3px solid #89222e;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #89222e;
+      color: white;
+      transition: 300ms;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.work {
+  margin-top: 160px;
+  padding-bottom: 50px;
+
+  .card-work {
+    height: 400px;
+    margin-top: 55px;
+    padding: 50px 20px 30px;
+    background: #89222e;
+    border-radius: 20px;
+    color: #fdfbe8;
+  }
+  img {
+    width: 150px;
+    margin-bottom: 35px;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 61px;
+  color: #fdfbe9;
+  box-sizing: border-box;
+  background: #89222e;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px 40px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .header {
+    font-size: 28px;
+  }
+}
