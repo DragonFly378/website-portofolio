@@ -10829,6 +10829,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hide-element {
+  display: none;
+}
+
 .navbar-web {
   padding-top: 15px;
   padding-bottom: 15px;
