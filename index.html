@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DragonFly378</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -56,7 +57,7 @@
         </div>
       </div>
     </nav>
-    <section class="jumbotron-web">
+    <section class="jumbotron-web" data-aos="zoom-in">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12 kiri">
@@ -98,7 +99,7 @@
       </div>
     </section>
 
-    <section id="about" class="about-me col-md-12">
+    <section data-aos="fade-up" id="about" class="about-me col-md-12">
       <div class="container">
         <div class="row justify-content-center">
           <div class="header">About Me</div>
@@ -116,14 +117,18 @@
       </div>
     </section>
 
-    <section class="work col-md-12">
+    <section data-aos="fade-down" class="work col-md-12">
       <div class="container">
         <div class="row justify-content-center">
           <div class="header">I Work For</div>
         </div>
         <div class="konten row justify-content-center">
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
               <div class="card-konten">
                 <img src="./images/workFor-1.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">UI/UX DESIGN</h3>
@@ -135,7 +140,11 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="flip-up"
+              data-aos-duration="2000"
+            >
               <div class="card-konten">
                 <img src="./images/workFor-2.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">RESPONSIVE APPS</h3>
@@ -144,7 +153,11 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
               <div class="card-konten">
                 <img src="./images/workFor-3.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">WEB DESIGN</h3>
@@ -156,7 +169,7 @@
       </div>
     </section>
 
-    <section class="projects col-md-12" id="projects">
+    <section class="projects col-md-12" id="projects" data-aos="fade-down">
       <div class="container">
         <div class="row justify-content-center">
           <div class="header">Projects</div>
@@ -189,7 +202,11 @@
 
         <div class="konten row justify-content-center">
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div class="card-konten">
                 <img src="./images/rw-pintar.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">RW PINTAR</h3>
@@ -205,7 +222,11 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <div class="card-konten">
                 <img src="./images/Artsneakers.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">ARTSNEAKERS</h3>
@@ -219,7 +240,11 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <div class="card-konten">
                 <img src="./images/uxin.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">UX.in</h3>
@@ -231,7 +256,11 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
               <div class="card-konten">
                 <img src="./images/bisnisternak.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">BisnisTernak.id</h3>
@@ -243,7 +272,11 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-work text-center">
+            <div
+              class="card card-work text-center"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
               <div class="card-konten">
                 <img src="./images/mynation.png" alt="UI/UX" class="mb-4" />
                 <h3 class="mb-3">My Nation</h3>
@@ -261,7 +294,15 @@
       </div>
     </section>
 
-    <section class="skills col-md-12" id="skills">
+    <section
+      class="skills col-md-12"
+      id="skills"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="100"
+      data-aos-offset="0"
+    >
+      >
       <div class="container">
         <div class="row justify-content-center">
           <div class="header">Skills</div>
@@ -320,7 +361,7 @@
       </div>
     </section>
 
-    <section class="contact col-md-12">
+    <section class="contact col-md-12" data-aos="fade-up">
       <div class="container">
         <div class="row justify-content-center">
           <div class="header">Contact Me</div>
@@ -417,5 +458,9 @@
     <!-- Load Script -->
     <script src="./vendor/jquery/jquery.slim.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
