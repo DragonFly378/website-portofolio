@@ -1,6 +1,6 @@
 .projects {
   margin-top: 160px;
-  padding-bottom: 50px;
+  margin-bottom: 100px;
 
   .navbar {
     margin-top: 40px;
@@ -50,7 +50,13 @@
     min-height: 96px;
   }
   a {
-    color: #89222e;
+    .btn {
+      color: #89222e;
+      &:hover {
+        background-color: #89222e;
+        color: #fdfbe8;
+      }
+    }
   }
   .see-more {
     margin-top: 30px;

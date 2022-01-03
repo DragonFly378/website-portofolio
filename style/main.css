@@ -10988,7 +10988,7 @@ footer .copyright {
 
 .projects {
   margin-top: 160px;
-  padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .projects .navbar {
@@ -11048,8 +11048,13 @@ footer .copyright {
   min-height: 96px;
 }
 
-.projects a {
+.projects a .btn {
   color: #89222e;
+}
+
+.projects a .btn:hover {
+  background-color: #89222e;
+  color: #fdfbe8;
 }
 
 .projects .see-more {
@@ -11078,6 +11083,7 @@ footer .copyright {
 
 .skills {
   margin-top: 160px;
+  margin-bottom: 160px;
 }
 
 .skills .konten {
