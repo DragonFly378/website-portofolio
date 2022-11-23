@@ -11040,7 +11040,7 @@ footer .copyright {
 }
 
 .projects p {
-  font-size: 16px;
+  min-height: 96px;
 }
 
 .projects .desc {
