@@ -4,6 +4,8 @@ import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 import navLogo from "../assets/img/navlogo.svg";
 import arrowDown from "../assets/img/arrow-down.svg";
+import arrowUp from "../assets/img/arrow-up.svg";
+
 import { Link } from "react-router-dom";
 
 const Navbar = ({ active }) => {
@@ -22,9 +24,9 @@ const Navbar = ({ active }) => {
 
   console.log(isOpen);
   return (
-    <section className="navbar-section sticky top-0 z-40 bg-dark-blue">
+    <section className="navbar-section py-5 sticky top-0 z-40 bg-dark-blue">
       {/* mobile view */}
-      <div className="md:hidden w-11/12 mx-auto py-6 sticky z-40">
+      <div className="md:hidden w-11/12 mx-auto py-3 sticky z-40">
         <div className="flex justify-center">
           <div className="nav-brand grid gap-y-4">
             <img src={navLogo} alt="navlogo" className="w-32" />
@@ -33,9 +35,9 @@ const Navbar = ({ active }) => {
               className="place-self-center"
             >
               <img
-                src={arrowDown}
+                src={isOpen ? arrowUp : arrowDown}
                 alt="arrow"
-                className="text-white text-xl w-5 animate-bounce"
+                className="text-white text-xl w-5 mt-2 animate-bounce "
               />
             </button>
           </div>
@@ -43,8 +45,8 @@ const Navbar = ({ active }) => {
       </div>
       <div
         className={`${
-          isOpen === true ? "h-screen top-[100px]" : "top-[-800px] "
-        }   ease-in-out duration-700  nav-links flex flex-col gap-y-5 text-center py-60  m-auto absolute left-0 right-0 z-20 bg-dark-blue `}
+          isOpen === true ? "h-screen top-[80px]" : "top-[-800px] "
+        }     nav-links flex flex-col gap-y-5 bg-dark-blue  text-light-blue text-center py-60  m-auto absolute left-0 right-0 z-20 ease-in-out duration-700`}
       >
         {tabs.map((item, itemIdx) => {
           return (
@@ -52,7 +54,7 @@ const Navbar = ({ active }) => {
               key={itemIdx}
               className={`${
                 active === item.value && "text-orange font-medium"
-              } text-light-blue ${item.className}`}
+              }  ${item.className}`}
             >
               <Link to={`${item.value}`}>{item.name}</Link>
             </button>
@@ -61,18 +63,18 @@ const Navbar = ({ active }) => {
       </div>
 
       {/* web view */}
-      <div className="hidden md:flex md:justify-between w-10/12 mx-auto py-8">
+      <div className="hidden md:flex md:justify-between w-6/12 mx-auto py-4">
         <div className="nav-brand">
           <img src={navLogo} alt="" />
         </div>
-        <div className="nav-links flex gap-x-8 my-auto ">
+        <div className="nav-links flex gap-x-8 my-auto text-light-blue">
           {tabs.map((item, itemIdx) => {
             return (
               <div
                 key={itemIdx}
                 className={`${
                   active === item.value && "text-orange font-medium"
-                } text-light-blue ${item.className}`}
+                }  ${item.className}`}
               >
                 <Link to={`${item.value}`}>{item.name}</Link>
               </div>
