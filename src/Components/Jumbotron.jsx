@@ -4,20 +4,20 @@ import logo from "../assets/img/dragonfly.svg";
 const Jumbotron = () => {
   return (
     <>
-      <section className="jumbotron-section mt- md:mt-24">
-        <div className="w-11/12 md:w-6/12 mx-auto flex flex-col gap-y-3 md:gap-y-8">
-          <div className="logo-capung flex mx-auto w-24 md:w-36">
+      <section className="jumbotron-section mt- lg:mt-24">
+        <div className="w-11/12 lg:w-6/12 mx-auto flex flex-col gap-y-3 lg:gap-y-8">
+          <div className="logo-capung flex mx-auto w-24 lg:w-36">
             <img src={logo} alt="logo" />
           </div>
           <div
             style={{ fontFamily: "Rodetta" }}
-            className="greet text-center text-orange text-md md:text-3xl "
+            className="greet text-center text-orange text-md lg:text-3xl "
           >
             Hi, Assalamu’alaikum
-            <span className="text-2xl md:text-4xl"> 🙌 </span>
+            <span className="text-2xl lg:text-4xl"> 🙌 </span>
           </div>
           <div className="desc text-light-blue ">
-            <div className="font-bold text-sm md:text-2xl md:mb-2 mb md:tracking-widest md:leading-7 leading-7">
+            <div className="font-bold text-sm lg:text-2xl lg:mb-2 mb lg:tracking-widest lg:leading-7 leading-7">
               {" "}
               I’m Hafiz -{" "}
               <span className="underline text-cyan-500">
@@ -30,7 +30,7 @@ const Jumbotron = () => {
               </span>{" "}
               💻{" "}
             </div>
-            <div className="text-justify text-xs md:text-xl tracking-wide md:tracking-widest md:leading-7 leading-5">
+            <div className="text-justify text-xs lg:text-2xl tracking-wide lg:tracking-widest lg:leading-10 leading-5">
               Computer Science student, interested in technology, visual design.
               Experienced in designing and building website with mobile
               capabilities, accompanied by a design process in the form of user

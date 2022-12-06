@@ -26,10 +26,26 @@ const Navbar = ({ active }) => {
   return (
     <section className="navbar-section py-5 sticky top-0 z-40 bg-dark-blue">
       {/* mobile view */}
-      <div className="md:hidden w-11/12 mx-auto py-3 sticky z-40">
+      <div className="lg:hidden w-11/12 mx-auto py sticky z-40">
         <div className="flex justify-center">
-          <div className="nav-brand grid gap-y-4">
-            <img src={navLogo} alt="navlogo" className="w-32" />
+          <div className="nav-brand flex gap-x-4">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="place-self-center"
+            >
+              <img
+                src={isOpen ? arrowUp : arrowDown}
+                alt="arrow"
+                className="text-white text-xl w-5 mt-2 animate-bounce "
+              />
+            </button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="place-self-center"
+            >
+              <img src={navLogo} alt="navlogo" className="w-40" />
+            </button>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="place-self-center"
@@ -45,25 +61,29 @@ const Navbar = ({ active }) => {
       </div>
       <div
         className={`${
-          isOpen === true ? "h-screen top-[80px]" : "top-[-800px] "
-        }     nav-links flex flex-col gap-y-5 bg-dark-blue  text-light-blue text-center py-60  m-auto absolute left-0 right-0 z-20 ease-in-out duration-700`}
+          isOpen === true ? "h-screen top-[0px]" : "top-[-800px] "
+        }     nav-links  bg-dark-blue  text-light-blue my-auto text-center py-60 absolute left-0 right-0 z-20 ease-in-out duration-700`}
       >
-        {tabs.map((item, itemIdx) => {
-          return (
-            <button
-              key={itemIdx}
-              className={`${
-                active === item.value && "text-orange font-medium"
-              }  ${item.className}`}
-            >
-              <Link to={`${item.value}`}>{item.name}</Link>
-            </button>
-          );
-        })}
+        <div className="flex flex-col gap-y-5">
+          {tabs.map((item, itemIdx) => {
+            return (
+              <button
+                key={itemIdx}
+                className={`${
+                  active === item.value && "text-orange font-medium"
+                }  ${
+                  item.className
+                } hover:underline hover:underline-offset-8 hover:decoration-wavy hover:text-orange transition ease-in-out delay-150`}
+              >
+                <Link to={`${item.value}`}>{item.name}</Link>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* web view */}
-      <div className="hidden md:flex md:justify-between w-6/12 mx-auto py-4">
+      <div className="hidden lg:flex lg:justify-between w-6/12 mx-auto py-4">
         <div className="nav-brand">
           <img src={navLogo} alt="" />
         </div>
@@ -74,7 +94,9 @@ const Navbar = ({ active }) => {
                 key={itemIdx}
                 className={`${
                   active === item.value && "text-orange font-medium"
-                }  ${item.className}`}
+                }  ${
+                  item.className
+                } hover:underline hover:underline-offset-8 hover:decoration-wavy hover:text-orange transition ease-in-out delay-150`}
               >
                 <Link to={`${item.value}`}>{item.name}</Link>
               </div>

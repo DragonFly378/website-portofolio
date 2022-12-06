@@ -1,14 +1,17 @@
 import React from "react";
 import Jumbotron from "../Components/Jumbotron";
+import WorkContent from "../Components/WorkContent";
 import Layout from "../Layout/Layout";
-import About from "./About";
+import { AboutContent } from "./About";
+import Work from "./Work";
 
 const Home = () => {
   return (
     <>
       <Layout>
         <Jumbotron />
-        <About page={false}/>
+        <Work page={false} />
+        <AboutContent />
       </Layout>
     </>
   );
