@@ -23,16 +23,35 @@ const WorkContent = ({ data, imgPos }) => {
             {data.desc}
           </div>
           <div className="tags flex gap-x-2 font-medium mb-2 lg:mb-5 decoration-transparent">
-            <div className="tag-item text-red bg-light-blue text-sm lg:text-lg py-1 px-2 rounded-lg">
-              UI/UX
-            </div>
-            <div className="tag-item text-light-blue bg-ungu text-sm lg:text-lg py-1 px-2 rounded-lg">
-              Fronted
-            </div>
+            {data.tags.map((item, itemIdx) => (
+              <div
+                className={`tag-item ${
+                  item === "UI/UX"
+                    ? "text-red bg-light-blue"
+                    : "text-light-blue bg-ungu"
+                }  text-sm lg:text-lg py-1 px-2 rounded-lg`}
+              >
+                {item}
+              </div>
+            ))}
           </div>
-          <Link to="#" className="link text-orange lg:text-xl hover:underline">
-            View Project
-          </Link>
+
+          <div className="actions flex flex-row gap-x-2 lg:gap-x-4">
+            {data.actions.map((item, itemIdx) => (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className={`link ${
+                  item.title === "View Project"
+                    ? "text-orange"
+                    : "text-light-blue"
+                }  lg:text-xl hover:underline`}
+              >
+                {item.title}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </>

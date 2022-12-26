@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 import navLogo from "../assets/img/navlogo.svg";
 import arrowDown from "../assets/img/arrow-down.svg";
@@ -13,7 +11,7 @@ const Navbar = ({ active }) => {
 
   const tabs = [
     { name: "Home", value: "/" },
-    { name: "Work", value: "/work" },
+    { name: "Results", value: "/results" },
     { name: "About me", value: "/about" },
     {
       name: "Contact me 🤙",

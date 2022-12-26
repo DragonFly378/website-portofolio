@@ -17,7 +17,7 @@ const Jumbotron = () => {
             <span className="text-2xl lg:text-4xl"> 🙌 </span>
           </div>
           <div className="desc text-light-blue ">
-            <div className="font-bold text-sm lg:text-2xl lg:mb-2 mb lg:tracking-widest lg:leading-7 leading-7">
+            <div className="font-bold text-sm text-center lg:text-2xl lg:mb-2 mb lg:tracking-widest lg:leading-7 leading-7">
               {" "}
               I’m Hafiz -{" "}
               <span className="underline text-cyan-500">
@@ -31,11 +31,14 @@ const Jumbotron = () => {
               💻{" "}
             </div>
             <div className="text-justify text-xs lg:text-2xl tracking-wide lg:tracking-widest lg:leading-10 leading-5">
-              Computer Science student, interested in technology, visual design.
-              Experienced in designing and building website with mobile
-              capabilities, accompanied by a design process in the form of user
-              centered design, has worked on team projects as a frontend
-              developer as well as a UI/UX designer.
+              Computer Science student, has an interest in technology, visual
+              design. has experience in making website and mobile designs,
+              accompanied by a design process in the form of user centered
+              design, has worked on team projects as a frontend developer as
+              well as a UI/UX designer. Quickly adapt to new things such as
+              skills, systems, concepts and systems. Likes challenges and is
+              user-oriented in building a product. Currently learning ReactJs,
+              UI/UX, GraphQL
             </div>
           </div>
         </div>
