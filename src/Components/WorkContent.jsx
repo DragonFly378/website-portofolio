@@ -35,8 +35,9 @@ const WorkContent = ({ data, imgPos }) => {
           <div className="actions flex flex-row gap-x-2 lg:gap-x-4">
             {data.actions.map((item, itemIdx) => (
               <a
+                id={itemIdx}
                 href={item.link}
-                target="_blank"
+                target={data.tags[0] === "UI/UX" ? "" : "_blank"}
                 rel="noreferrer"
                 className={`link text-orange hover:text-white lg:text-xl hover:underline`}
               >

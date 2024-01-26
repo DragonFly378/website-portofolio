@@ -44,7 +44,8 @@ const Work = ({ page }) => {
       actions: [
         {
           title: "View Report",
-          link: "https://drive.google.com/file/d/12fCwuQwP1eeTGVyw_eFx1UNZXl96uNal/view?usp=sharing",
+          // link: "https://drive.google.com/file/d/12fCwuQwP1eeTGVyw_eFx1UNZXl96uNal/view?usp=sharing",
+          link: "/project/rwpintar",
         },
       ],
     },
@@ -71,7 +72,8 @@ const Work = ({ page }) => {
       actions: [
         {
           title: "View Report",
-          link: "https://drive.google.com/file/d/12fCwuQwP1eeTGVyw_eFx1UNZXl96uNal/view?usp=sharing",
+          // link: "https://drive.google.com/file/d/12fCwuQwP1eeTGVyw_eFx1UNZXl96uNal/view?usp=sharing",
+          link: "/project/rwpintar",
         },
       ],
     },
