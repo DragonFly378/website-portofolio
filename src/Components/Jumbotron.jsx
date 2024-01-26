@@ -8,7 +8,7 @@ const Jumbotron = () => {
     <>
       <section className={`jumbotron-section`}>
         <div
-          className="header-summary mt-12 pt-10 pb-16 lg:mt-0 lg:pt-24 lg:pb-36 bg-no-repeat bg-cover"
+          className="header-summary mt-12 pt-10 pb-16 lg:mt-0 lg:pt-24 lg:pb-36 2xl:py-48 bg-no-repeat bg-cover md:bg-contain"
           style={{ backgroundImage: `url(${jumbotronBg})` }}
         >
           <div className="w-11/12 lg:w-6/12 mx-auto flex flex-col gap-y-2 lg:gap-y-4">
@@ -28,11 +28,12 @@ const Jumbotron = () => {
                 passion for both
               </div>
             </div>
+
             <div className="roles justify-center flex ">
               <img
                 src={rolesimg}
                 alt="myroles"
-                className="w-[320px] lg:w-[450px]"
+                className="w-[320px] lg:w-[500px]"
               />
             </div>
           </div>
