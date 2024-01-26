@@ -12,26 +12,22 @@ const WorkContent = ({ data, imgPos }) => {
         >
           <img src={data.img} alt="img" />
         </div>
-        <div className="content-data flex flex-col gap-y-2 lg:col-span-6 lg:my-auto">
+        <div className="content-data flex flex-col gap-y-1 lg:col-span-6 lg:my-auto">
           <div
             className="judul text-orange text-xl lg:text-4xl lg:mb-4"
             style={{ fontFamily: "Rodetta" }}
           >
             {data.title}
           </div>
-          <div className="desc text-sm lg:text-xl text-left text-light-blue mb-2 lg:mb-5 decoration-transparent">
+          <div className="desc text-sm lg:text-base text-left text-light-blue mb-1 decoration-transparent">
             {data.desc}
           </div>
-          <div className="tags flex gap-x-2 font-medium mb-2 lg:mb-5 decoration-transparent">
+          <div className="tags flex font-medium mb-1 gap-x-2 decoration-transparent">
             {data.tags.map((item, itemIdx) => (
               <div
-                className={`tag-item ${
-                  item === "UI/UX"
-                    ? "text-red bg-light-blue"
-                    : "text-light-blue bg-ungu"
-                }  text-sm lg:text-lg py-1 px-2 rounded-lg`}
+                className={`tag-item text-emerald-300 text-sm lg:text-md rounded-lg`}
               >
-                {item}
+                #{item}
               </div>
             ))}
           </div>
@@ -42,11 +38,7 @@ const WorkContent = ({ data, imgPos }) => {
                 href={item.link}
                 target="_blank"
                 rel="noreferrer"
-                className={`link ${
-                  item.title === "View Project"
-                    ? "text-orange"
-                    : "text-light-blue"
-                }  lg:text-xl hover:underline`}
+                className={`link text-orange hover:text-white lg:text-xl hover:underline`}
               >
                 {item.title}
               </a>

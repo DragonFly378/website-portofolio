@@ -11,7 +11,7 @@ import myquranku from "../assets/img/myquranku.png";
 import { Link } from "react-router-dom";
 
 const Work = ({ page }) => {
-  const goodtWorks = [
+  const filterProjects = [
     {
       title: "UX.in",
       desc: "How to make the best UX design course platform for prospective UX designers, starting from vision boards, mapping, wireframes to mockups.",
@@ -19,7 +19,7 @@ const Work = ({ page }) => {
       tags: ["UI/UX"],
       actions: [
         {
-          title: "Study Case",
+          title: "View Report",
           link: "https://drive.google.com/file/d/1tMURho_PVd84QNtVs-YUjY4k0HddfgrZ/view?usp=sharing",
         },
       ],
@@ -40,14 +40,10 @@ const Work = ({ page }) => {
       title: "RW PINTAR",
       desc: "Database website for storing data and letters belonging to residents of Batu Ceper, Central Jakarta, not only that, this website also has several features including RW complaint services, discussion forums, and also blogs for traders there.",
       img: rwpintar,
-      tags: ["UI/UX", "Frontend"],
+      tags: ["UI/UX"],
       actions: [
         {
-          title: "View Project",
-          link: "https://dragonfly378.github.io/Rw-Pintar-Front/Front-end/html/home.html",
-        },
-        {
-          title: "Case Study",
+          title: "View Report",
           link: "https://drive.google.com/file/d/12fCwuQwP1eeTGVyw_eFx1UNZXl96uNal/view?usp=sharing",
         },
       ],
@@ -66,19 +62,15 @@ const Work = ({ page }) => {
     },
   ];
 
-  const workContens = [
+  const allProjects = [
     {
       title: "RW PINTAR",
       desc: "Database website for storing data and letters belonging to residents of Batu Ceper, Central Jakarta, not only that, this website also has several features including RW complaint services, discussion forums, and also blogs for traders there.",
       img: rwpintar,
-      tags: ["UI/UX", "Frontend"],
+      tags: ["UI/UX"],
       actions: [
         {
-          title: "View Project",
-          link: "https://dragonfly378.github.io/Rw-Pintar-Front/Front-end/html/home.html",
-        },
-        {
-          title: "Case Study",
+          title: "View Report",
           link: "https://drive.google.com/file/d/12fCwuQwP1eeTGVyw_eFx1UNZXl96uNal/view?usp=sharing",
         },
       ],
@@ -102,7 +94,7 @@ const Work = ({ page }) => {
       tags: ["UI/UX"],
       actions: [
         {
-          title: "Case Study",
+          title: "View Report",
           link: "https://drive.google.com/file/d/1TrDVxkRYhAiDfc3CFFAlpS5yz_exiJ4n/view",
         },
       ],
@@ -123,15 +115,11 @@ const Work = ({ page }) => {
       title: "MyQuranku",
       desc: "Alquran website using ReactJs and GraphQl for databases",
       img: myquranku,
-      tags: ["UI/UX", "Frontend"],
+      tags: ["Frontend"],
       actions: [
         {
           title: "View Project",
           link: "https://github.com/DragonFly378/MSIB-Alterra_Miniproject/tree/miniproject-1/quran-ku",
-        },
-        {
-          title: "Case Study",
-          link: "https://drive.google.com/file/d/16yoRL9J0qJY2z9cbl_eJsFY2Uk06Woxr/view?usp=share_link",
         },
       ],
     },
@@ -142,7 +130,7 @@ const Work = ({ page }) => {
       tags: ["UI/UX"],
       actions: [
         {
-          title: "Case Study",
+          title: "View Report",
           link: "https://drive.google.com/file/d/1m6_ViMWR_57GxfNnLLa__YGAvVy0a-G0/view?usp=share_link",
         },
       ],
@@ -158,23 +146,23 @@ const Work = ({ page }) => {
               className="text-orange text-center underline text-xl  lg:text-3xl lg:mb-4"
               style={{ fontFamily: "Rodetta" }}
             >
-              Results
+              All Projects
             </div>
-            {workContens.map((item, itemIdx) => {
+            {allProjects.map((item, itemIdx) => {
               return <WorkContent data={item} imgPos={`${itemIdx}`} />;
             })}
           </section>
         </Layout>
       ) : (
         <section className="work-section my-8 lg:my-24">
-          {goodtWorks.map((item, itemIdx) => {
+          {filterProjects.map((item, itemIdx) => {
             return (
               <WorkContent key={itemIdx} data={item} imgPos={`${itemIdx}`} />
             );
           })}
-          <Link to="/work">
+          <Link to="/projects">
             {" "}
-            <div className="see-more w-8/12 lg:w-5/12 mx-auto my-4 lg:my-16 text-center lg:py-2 lg:text-xl text-orange border border-orange rounded-lg hover:bg-white hover:text-ungu hover:underline hover:border-none transition ease-in-out">
+            <div className="see-more w-8/12 lg:w-5/12 mx-auto my-4 lg:my-16 text-center lg:py-2 lg:text-xl text-orange border border-orange rounded-lg hover:bg-orange hover:text-dark-blue hover:underline hover:border-none transition ease-in-out">
               See More
             </div>
           </Link>

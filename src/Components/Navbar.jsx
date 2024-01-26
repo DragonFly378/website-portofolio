@@ -11,8 +11,8 @@ const Navbar = ({ active }) => {
 
   const tabs = [
     { name: "Home", value: "/" },
-    { name: "Results", value: "/results" },
-    { name: "About me", value: "/about" },
+    { name: "Projects", value: "/projects" },
+    // { name: "About me", value: "/about" },
     {
       name: "Contact me 🤙",
       value: "/contact",
@@ -22,7 +22,7 @@ const Navbar = ({ active }) => {
 
   console.log(isOpen);
   return (
-    <section className="navbar-section py-5 sticky top-0 z-40 bg-dark-blue">
+    <section className="navbar-section py-5 sticky top-0 z-40 bg-dark-blue bg-opacity-60 backdrop-blur-[30px]">
       {/* mobile view */}
       <div className="lg:hidden w-11/12 mx-auto py sticky z-40">
         <div className="flex justify-center">
@@ -81,10 +81,10 @@ const Navbar = ({ active }) => {
       </div>
 
       {/* web view */}
-      <div className="hidden lg:flex lg:justify-between w-6/12 mx-auto py-4">
-        <div className="nav-brand">
+      <div className="hidden lg:flex lg:justify-between w-6/12 mx-auto py-2">
+        <Link to="/" className="nav-brand">
           <img src={navLogo} alt="" />
-        </div>
+        </Link>
         <div className="nav-links flex gap-x-8 my-auto text-light-blue">
           {tabs.map((item, itemIdx) => {
             return (

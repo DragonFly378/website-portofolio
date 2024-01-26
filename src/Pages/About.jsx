@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFileLines } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faLinkedin,
@@ -9,7 +9,6 @@ import {
 import Layout from "../Layout/Layout";
 
 import img from "../assets/img/apis.png";
-import { Link } from "react-router-dom";
 import Jumbotron from "../Components/Jumbotron";
 
 const About = ({ page }) => {
@@ -50,9 +49,9 @@ export const AboutContent = () => {
       link: "https://www.linkedin.com/in/muhammadhafizhisbullah/",
     },
     {
-      name: "website",
-      icon: faGlobe,
-      link: "https://www.dragonfly378.my.id",
+      name: "cv",
+      icon: faFileLines,
+      link: "https://drive.google.com/file/d/1Kg5RPTY8F7RAGiTIsKKtvMoCQFRUboLG/view?usp=sharing",
     },
     {
       name: "email",
@@ -62,7 +61,7 @@ export const AboutContent = () => {
   ];
   return (
     <>
-      <section className="about-section my-10 lg:my-24">
+      <section className="about-section my-8 lg:my-10">
         <div className="w-11/12 lg:w-6/12 mx-auto flex flex-col gap-y-3 lg:gap-y-8  ">
           <div className="content flex flex-col lg:gap-y-3 gap-y-1">
             <div className="img flex mx-auto w-44 lg:w-80 mb-4 ">
@@ -84,7 +83,7 @@ export const AboutContent = () => {
               <div className="social-media flex  text-light-blue gap-x-4 lg:gap-x-8 mt-3 lg:mt-4">
                 {sosmed.map((item, itemIdx) => {
                   return (
-                    <a key={itemIdx} href={item.link} target="_blank">
+                    <a key={itemIdx} href={item.link} target="_blank" rel="noreferrer">
                       <FontAwesomeIcon
                         className="lg:text-2xl text-xl"
                         icon={item.icon}
