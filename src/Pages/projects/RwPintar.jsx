@@ -49,8 +49,8 @@ const RwPintar = () => {
                   complaint services, discussion forums, and also blogs for
                   traders there. This is a Human Computer Interaction course
                   assignment that my team of 3 people (including myself) made in
-                  third smester. This project helped me to deepen my UX and
-                  Visual Design skills.
+                  third smester (2020). This project helped me to deepen my UX
+                  and Visual Design skills.
                 </div>
               </div>
               <div className="background-content flex flex-col gap-y-4 lg:gap-y-4">
