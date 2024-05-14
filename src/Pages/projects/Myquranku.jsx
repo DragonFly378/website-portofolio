@@ -1,7 +1,7 @@
 import React from "react";
 
-const Myquranku = () => {
-  return <div>Myquranku</div>;
+const MyQuranKu = () => {
+  return <div>MyQuranKu</div>;
 };
 
-export default Myquranku;
+export default MyQuranKu;

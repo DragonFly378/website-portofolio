@@ -23,6 +23,7 @@ import style_guide from "../../assets/img/projects/jaktrans/style_guide.png";
 import participants from "../../assets/img/projects/jaktrans/participants.png";
 import ut_results from "../../assets/img/projects/jaktrans/ut_results.png";
 import conclusion from "../../assets/img/projects/jaktrans/conclusion.png";
+import { AboutContent } from "../About";
 
 const JakTrans = () => {
   return (
@@ -67,7 +68,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="introduction-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="introduction-content flex flex-col gap-y-2 lg:gap-y-4">
                 <div className="introduction flex flex-col gap-y-4">
                   <h3 className=" header-title text-orange text-lg lg:text-2xl  font-rodetta">
                     Introduction
@@ -153,7 +154,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="objective-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="objective-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Objectives
                 </h3>
@@ -170,7 +171,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="discover-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="discover-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Discover
                 </h3>
@@ -222,7 +223,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="issuetree-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="issuetree-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Issue Tree
                 </h3>
@@ -243,7 +244,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="define-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="define-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Defining Users and Research
                 </h3>
@@ -295,7 +296,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="grouping-mandates-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="grouping-mandates-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Let’s <span className="text-white">“Grouping”</span> and
                   Making the <span className="text-white">“Mandates”</span>
@@ -333,7 +334,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="conceptmodel-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="conceptmodel-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Build the <span className="text-white">"Concept Model"</span>
                 </h3>
@@ -367,7 +368,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="jtbd-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="jtbd-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Jobs To Be Done
                 </h3>
@@ -386,7 +387,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="userflow-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="userflow-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   User Flow & Information Architecture
                 </h3>
@@ -442,7 +443,7 @@ const JakTrans = () => {
                 </div>{" "}
               </div>
 
-              <div className="wireframe-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="wireframe-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Wireframe
                 </h3>
@@ -475,7 +476,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="voice-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="voice-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Tone of Voice
                 </h3>
@@ -497,7 +498,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="moodboard-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="moodboard-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Moodboard for inspiration{" "}
                 </h3>
@@ -521,7 +522,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="userinterface-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="userinterface-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   The UI Solution
                 </h3>
@@ -619,7 +620,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="usability-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="usability-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Usability testing for validate design
                 </h3>
@@ -722,7 +723,7 @@ const JakTrans = () => {
                 </div>
               </div>
 
-              <div className="takeaway-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="takeaway-content flex flex-col gap-y-2 lg:gap-y-4">
                 <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Development and Future Work
                 </h3>
@@ -753,6 +754,8 @@ const JakTrans = () => {
                   Jakarta's diverse community.
                 </div>
               </div>
+
+              <AboutContent />
             </div>
           </div>
         </section>

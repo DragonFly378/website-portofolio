@@ -10,7 +10,7 @@ import JakTrans from "./Pages/projects/JakTrans";
 import RwPintar from "./Pages/projects/RwPintar";
 import Uxin from "./Pages/projects/Uxin";
 import Nomads from "./Pages/projects/Nomads";
-import Myquranku from "./Pages/projects/Myquranku";
+import MyQuranKu from "./Pages/projects/MyQuranKu";
 import DoctorOn from "./Pages/projects/DoctorOn";
 
 export const projects = [
@@ -103,7 +103,7 @@ export const projects = [
   {
     title: "MyQuranku",
     root: "myquranku",
-    page: Myquranku,
+    page: MyQuranKu,
     desc: "Alquran website using ReactJs and GraphQl for databases",
     img: myquranku,
     tags: ["Frontend"],

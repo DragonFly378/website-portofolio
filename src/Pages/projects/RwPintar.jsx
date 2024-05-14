@@ -10,6 +10,7 @@ import diagram from "../../assets/img/projects/rwpintar/diagram.png";
 import prototype from "../../assets/img/projects/rwpintar/protoyype.png";
 import testing from "../../assets/img/projects/rwpintar/testing.png";
 import mockup from "../../assets/img/projects/rwpintar/mockup.png";
+import { AboutContent } from "../About";
 
 const RwPintar = () => {
   return (
@@ -33,7 +34,7 @@ const RwPintar = () => {
                     Product Designer & Frontend Developer
                   </div>
                 </div>
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Introduction
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -47,9 +48,9 @@ const RwPintar = () => {
                   and Visual Design skills.
                 </div>
               </div>
-              <div className="background-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="background-content flex flex-col gap-y-2 lg:gap-y-4">
                 {" "}
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Background
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
@@ -77,9 +78,9 @@ const RwPintar = () => {
                   NOMADS are as follows:
                 </div>
               </div>
-              <div className="interview-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="interview-content flex flex-col gap-y-2 lg:gap-y-4">
                 {" "}
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   User Interview
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -102,9 +103,9 @@ const RwPintar = () => {
                   />
                 </div>
               </div>
-              <div className="persona-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="persona-content flex flex-col gap-y-2 lg:gap-y-4">
                 {" "}
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Persona
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -118,9 +119,9 @@ const RwPintar = () => {
                   <img src={persona2} alt="persona2" className="w-full" />
                 </div>
               </div>
-              <div className="flow-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="flow-content flex flex-col gap-y-2 lg:gap-y-4">
                 {" "}
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   User Flow
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -135,9 +136,9 @@ const RwPintar = () => {
                   <img src={diagram} alt="diagram" className="w-full" />
                 </div>
               </div>
-              <div className="mockup-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="mockup-content flex flex-col gap-y-2 lg:gap-y-4">
                 {" "}
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Mockup
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -153,9 +154,9 @@ const RwPintar = () => {
                   <img src={mockup} alt="mockup" className="w-full" />{" "}
                 </div>
               </div>
-              <div className="prototype-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="prototype-content flex flex-col gap-y-2 lg:gap-y-4">
                 {" "}
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Prototype & Testing
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -176,9 +177,9 @@ const RwPintar = () => {
                   />
                 </div>
               </div>
-              <div className="prototype-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="prototype-content flex flex-col gap-y-2 lg:gap-y-4">
                 {" "}
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
                   Result and Takeaways
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -190,6 +191,7 @@ const RwPintar = () => {
                   Xixixi..
                 </div>
               </div>
+              <AboutContent />
             </div>
           </div>
         </section>
