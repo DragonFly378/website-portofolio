@@ -284,12 +284,12 @@ const JakTrans = () => {
                   perspectives firsthand.
                 </div>
 
-                <div className="user-research grid grid-cols-12 gap-y-4 gap-x-12">
+                <div className="user-research grid grid-cols-12 gap-y-4 lg:gap-x-12">
                   <div className="habbit col-span-12 lg:col-span-6">
                     <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
                       The Habbit
                     </div>
-                    <ul className="list-inside list-disc text-light-blue w-9/12 lg:w-full">
+                    <ul className="relative list-inside list-disc text-light-blue">
                       <li>
                         Often, people using public transportation without
                         checking schedules increase the risk of queues at
