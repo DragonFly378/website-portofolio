@@ -68,8 +68,7 @@ export const AboutContent = () => {
               <img src={img} alt="apis" />
             </div>
             <div
-              className="greet-text text-center lg:text-3xl text-lg "
-              style={{ fontFamily: "Rodetta" }}
+              className="greet-text text-center lg:text-3xl text-lg font-rodetta"
             >
               Hi, i’m <br /> Muhammad Hafiz HIsbullah 👋
             </div>
@@ -83,7 +82,12 @@ export const AboutContent = () => {
               <div className="social-media flex  text-light-blue gap-x-4 lg:gap-x-8 mt-3 lg:mt-4">
                 {sosmed.map((item, itemIdx) => {
                   return (
-                    <a key={itemIdx} href={item.link} target="_blank" rel="noreferrer">
+                    <a
+                      key={itemIdx}
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FontAwesomeIcon
                         className="lg:text-2xl text-xl"
                         icon={item.icon}

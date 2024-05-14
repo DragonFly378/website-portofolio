@@ -38,7 +38,7 @@ const Jumbotron = () => {
             </div>
           </div>
         </div>
-        <div className="w-11/12 lg:w-6/12 mx-auto py-18 lg:py-24">
+        <div className="w-11/12 lg:w-6/12 mx-auto py-18">
           <div className="header-desc text-center text-light-blue text-[12px] leading-5 tracking-wide lg:text-xl">
             Throughout my journey, I have immersed myself in various projects
             where I've contributed as a Frontend Developer, primarily utilizing

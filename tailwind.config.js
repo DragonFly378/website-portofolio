@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      nunito: ["Nunito"],
+      rodetta: ["Rodetta"],
+    },
     extend: {
       colors: {
         "dark-blue": "#0E3744",

@@ -14,12 +14,11 @@ const WorkContent = ({ data, imgPos }) => {
         </div>
         <div className="content-data flex flex-col gap-y-1 lg:col-span-6 lg:my-auto">
           <div
-            className="judul text-orange text-xl lg:text-4xl lg:mb-4"
-            style={{ fontFamily: "Rodetta" }}
+            className="judul text-orange text-xl lg:text-4xl lg:mb-4 font-rodetta"
           >
             {data.title}
           </div>
-          <div className="desc text-sm lg:text-base text-left text-light-blue mb-1 decoration-transparent">
+          <div className="desc text-sm lg:text-base font-thin text-left text-light-blue mb-1 decoration-transparent">
             {data.desc}
           </div>
           <div className="tags flex font-medium mb-1 gap-x-2 decoration-transparent">
@@ -39,7 +38,7 @@ const WorkContent = ({ data, imgPos }) => {
                 href={item.link}
                 target={data.tags[0] === "UI/UX" ? "" : "_blank"}
                 rel="noreferrer"
-                className={`link text-orange hover:text-white lg:text-xl hover:underline`}
+                className={`link text-orange hover:text-white text-base lg:text-lg hover:underline`}
               >
                 {item.title}
               </a>

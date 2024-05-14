@@ -12,7 +12,7 @@ const Navbar = ({ active }) => {
   const tabs = [
     { name: "Home", value: "/" },
     { name: "Projects", value: "/projects" },
-    // { name: "About me", value: "/about" },
+    { name: "About me", value: "/about" },
     {
       name: "Contact me 🤙",
       value: "/contact",

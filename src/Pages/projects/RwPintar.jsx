@@ -16,19 +16,16 @@ const RwPintar = () => {
     <>
       <Layout>
         <section className="work-rwpintar my-8 lg:my-16">
-          <div className="w-11/12 lg:w-6/12 mx-auto">
+          <div className="w-11/12 lg:w-8/12 mx-auto">
             <div className="flex flex-col gap-y-14">
-              <div className="intro-content flex flex-col gap-y-4 lg:gap-y-4">
+              <div className="intro-content flex flex-col gap-y-4 lg:gap-y-8">
                 {" "}
                 <div className="header-img w-full">
                   <img src={headerImg} alt="rwpintar" />
                 </div>
                 <div className="title-header">
                   {" "}
-                  <div
-                    className="judul text-orange text-xl lg:text-4xl text-center"
-                    style={{ fontFamily: "Rodetta" }}
-                  >
+                  <div className="font-rodetta judul text-orange text-xl lg:text-4xl text-center">
                     RW PINTAR
                   </div>
                   <div className="roles text-center text-orange mt-2">
@@ -36,10 +33,7 @@ const RwPintar = () => {
                     Product Designer & Frontend Developer
                   </div>
                 </div>
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   Introduction
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -55,13 +49,10 @@ const RwPintar = () => {
               </div>
               <div className="background-content flex flex-col gap-y-4 lg:gap-y-4">
                 {" "}
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   Background
                 </h3>
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
+                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
                   Humans are social creatures, because almost every day humans
                   interact with other humans. These interactions lead to a
                   tendency to make communication media directly or through
@@ -88,10 +79,7 @@ const RwPintar = () => {
               </div>
               <div className="interview-content flex flex-col gap-y-4 lg:gap-y-4">
                 {" "}
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   User Interview
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -116,10 +104,7 @@ const RwPintar = () => {
               </div>
               <div className="persona-content flex flex-col gap-y-4 lg:gap-y-4">
                 {" "}
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   Persona
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -135,10 +120,7 @@ const RwPintar = () => {
               </div>
               <div className="flow-content flex flex-col gap-y-4 lg:gap-y-4">
                 {" "}
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   User Flow
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -155,10 +137,7 @@ const RwPintar = () => {
               </div>
               <div className="mockup-content flex flex-col gap-y-4 lg:gap-y-4">
                 {" "}
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   Mockup
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -176,10 +155,7 @@ const RwPintar = () => {
               </div>
               <div className="prototype-content flex flex-col gap-y-4 lg:gap-y-4">
                 {" "}
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   Prototype & Testing
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
@@ -202,10 +178,7 @@ const RwPintar = () => {
               </div>
               <div className="prototype-content flex flex-col gap-y-4 lg:gap-y-4">
                 {" "}
-                <h3
-                  className="header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]"
-                  style={{ fontFamily: "Rodetta" }}
-                >
+                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl mb-[-4px] lg:mb-[-10px]">
                   Result and Takeaways
                 </h3>
                 <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8">
