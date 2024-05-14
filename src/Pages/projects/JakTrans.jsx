@@ -89,7 +89,7 @@ const JakTrans = () => {
                       <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
                         Client
                       </div>
-                      <div className="caption text-light-blue lg:text-lg">
+                      <div className="caption text-light-blue text-base lg:text-lg">
                         Insan Desain
                       </div>
                     </div>{" "}
@@ -97,7 +97,7 @@ const JakTrans = () => {
                       <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
                         Duration
                       </div>
-                      <div className="caption text-light-blue lg:text-lg">
+                      <div className="caption text-light-blue text-base lg:text-lg">
                         16 Weeks
                       </div>
                     </div>{" "}
@@ -105,7 +105,7 @@ const JakTrans = () => {
                       <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
                         The Team
                       </div>
-                      <div className="caption text-light-blue lg:text-lg">
+                      <div className="caption text-light-blue text-base lg:text-lg">
                         Muhammad Hafiz Hisbullah
                       </div>
                     </div>
@@ -116,20 +116,36 @@ const JakTrans = () => {
                     </div>
                     <div className="list col-span-12 flex flex-col lg:flex-row justify-between text-light-blue lg:text-lg">
                       <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3">Figma</li>
-                        <li className="col-span-3">Figjam</li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          Figma
+                        </li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          Figjam
+                        </li>
                       </ul>{" "}
                       <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3">Visual Studio Code</li>
-                        <li className="col-span-3">HTML</li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          Visual Studio Code
+                        </li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          HTML
+                        </li>
                       </ul>{" "}
                       <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3">Tailwind</li>
-                        <li className="col-span-3">Javascript</li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          Tailwind
+                        </li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          Javascript
+                        </li>
                       </ul>{" "}
                       <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3">ReactJs</li>
-                        <li className="col-span-3">Spreadsheet</li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          ReactJs
+                        </li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          Spreadsheet
+                        </li>
                       </ul>{" "}
                     </div>
                   </div>{" "}
@@ -139,15 +155,25 @@ const JakTrans = () => {
                     </div>
                     <div className="list col-span-12  flex flex-col lg:flex-row lg:gap-x-5 text-light-blue lg:text-lg">
                       <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3">UX Designer</li>
-                        <li className="col-span-3">UX Researcher</li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          UX Designer
+                        </li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          UX Researcher
+                        </li>
                       </ul>{" "}
                       <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3">UX Writer</li>
-                        <li className="col-span-3">UI Designer</li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          UX Writer
+                        </li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          UI Designer
+                        </li>
                       </ul>{" "}
                       <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3">Frontend Developer</li>
+                        <li className="col-span-3 text-base lg:text-lg">
+                          Frontend Developer
+                        </li>
                       </ul>{" "}
                     </div>
                   </div>
@@ -263,7 +289,7 @@ const JakTrans = () => {
                     <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
                       The Habbit
                     </div>
-                    <ul className="list-inside list-disc text-light-blue">
+                    <ul className="list-inside list-disc text-light-blue w-9/12 lg:w-full">
                       <li>
                         Often, people using public transportation without
                         checking schedules increase the risk of queues at
