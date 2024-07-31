@@ -12,6 +12,7 @@ const Navbar = ({ active }) => {
   const tabs = [
     { name: "Home", value: "/" },
     { name: "Projects", value: "/projects" },
+    { name: "Shots", value: "/shots" },
     { name: "About me", value: "/about" },
     {
       name: "Contact me 🤙",

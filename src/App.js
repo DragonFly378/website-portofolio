@@ -5,6 +5,7 @@ import Work from "./Pages/Work";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import { projects } from "./datas";
+import Shots from "./Pages/shots/Shots";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Work page={true} />} />
+          <Route path="/shots" element={<Shots />} />
           <Route path="/about" element={<About page={true} />} />{" "}
           <Route path="/contact" element={<Contact page={true} />} />
           {projects.map((project, projectId) => {

@@ -2,6 +2,9 @@ import React from "react";
 import logo from "../assets/img/dragonfly.svg";
 import rolesimg from "../assets/img/roles.png";
 import jumbotronBg from "../assets/img/jumbotron_bg.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { sosmed } from "../datas";
+import Connect from "./Connect";
 
 const Jumbotron = () => {
   return (
@@ -20,12 +23,11 @@ const Jumbotron = () => {
                 Hi, Assalamu’alaikum
                 <span className="text-base lg:text-2xl"> 🙌 </span>
               </div>
-              <div className="font-bold text-orange text-sm text-center lg:text-2xl lg:tracking-widest lg:leading-7 leading-7">
+              <div className="font-bold text-light-blue text-sm text-center lg:text-2xl lg:tracking-widest lg:leading-7 leading-7">
                 Muhammad Hafiz Hisbullah
               </div>
-              <div className="text-center text-light-blue font-thin text-sm lg:text-xl tracking-wide lg:tracking-widest lg:leading-10 leading-5">
-                is a recent computer science graduate based in Jakarta with a
-                passion for both
+              <div className="greet text-center text-orange text-sm lg:text-xl">
+                is a
               </div>
             </div>
 
@@ -36,17 +38,16 @@ const Jumbotron = () => {
                 className="w-[320px] lg:w-[500px]"
               />
             </div>
+
+            <Connect />
           </div>
         </div>
         <div className="w-11/12 lg:w-6/12 mx-auto py-18">
           <div className="header-desc text-center text-light-blue text-[12px] leading-5 tracking-wide lg:text-xl">
-            Throughout my journey, I have immersed myself in various projects
-            where I've contributed as a Frontend Developer, primarily utilizing
-            React JS, Tailwind CSS, and currently delving deeper into Next Js.
-            Beyond my development expertise, I also have experience as a Product
-            Designer. My fascination with design extends to exploring new ideas
-            and implementing them with a user-centric approach, ensuring optimal
-            usability and comfort for the end-users.
+            A person with deep-seated passion for Frontend Development and UI/UX
+            Design. My journey in the tech world has equipped me with a solid
+            foundation in design principles, frontend technologies, and a keen
+            eye for crafting user-centric solutions.
           </div>
         </div>
       </section>

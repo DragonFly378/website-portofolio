@@ -13,6 +13,13 @@ import Nomads from "./Pages/projects/Nomads";
 import MyQuranKu from "./Pages/projects/MyQuranKu";
 import DoctorOn from "./Pages/projects/DoctorOn";
 
+import { faEnvelope, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
 export const projects = [
   {
     title: "JakTrans",
@@ -129,3 +136,33 @@ export const projects = [
     ],
   },
 ];
+
+export const sosmed = [
+  {
+    name: "instagram",
+    icon: faInstagram,
+    link: "https://www.instagram.com/hafizhb28/",
+  },
+  {
+    name: "github",
+    icon: faGithub,
+    link: "https://github.com/DragonFly378",
+  },
+  {
+    name: "linkedin",
+    icon: faLinkedin,
+    link: "https://www.linkedin.com/in/muhammadhafizhisbullah/",
+  },
+  {
+    name: "cv",
+    icon: faFileLines,
+    link: "https://drive.google.com/file/d/1LF3KFKCNEXIB6WVDFUObFZZ_KB2yct9V/view?usp=sharing",
+  },
+  {
+    name: "email",
+    icon: faEnvelope,
+    link: "mailto:hafizhizbullah28@gmail.com",
+  },
+];
+
+export const shots = [];
