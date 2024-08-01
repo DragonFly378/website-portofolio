@@ -11,7 +11,7 @@ const Jumbotron = () => {
     <>
       <section className={`jumbotron-section`}>
         <div
-          className="header-summary mt-12 pt-10 pb-16 lg:mt-0 lg:pt-24 lg:pb-36 2xl:py-48 bg-no-repeat bg-cover md:bg-contain"
+          className="header-summary mt-12 pt-10 pb-16 lg:mt-0 lg:py-14bg-no-repeat bg-cover md:bg-contain"
           style={{ backgroundImage: `url(${jumbotronBg})` }}
         >
           <div className="w-11/12 lg:w-6/12 mx-auto flex flex-col gap-y-2 lg:gap-y-4">

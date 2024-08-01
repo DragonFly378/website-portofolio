@@ -20,6 +20,31 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
+import shots_catatanpintar_cover from "./assets/img/shots/catatanpintar/cover.png";
+import shots_catatanpintar1 from "./assets/img/shots/catatanpintar/drb-1.png";
+import shots_catatanpintar2 from "./assets/img/shots/catatanpintar/drb-2.png";
+import shots_catatanpintar3 from "./assets/img/shots/catatanpintar/drb-3.png";
+import shots_catatanpintar4 from "./assets/img/shots/catatanpintar/drb-4.png";
+
+import shots_cimory1 from "./assets/img/shots/cimory/drb-01.png";
+import shots_cimory2 from "./assets/img/shots/cimory/drb-02.png";
+import shots_cimory3 from "./assets/img/shots/cimory/drb-03.png";
+import shots_cimory4 from "./assets/img/shots/cimory/drb-04.png";
+
+import shots_erlangga1 from "./assets/img/shots/erlangga/drb-01.png";
+import shots_erlangga2 from "./assets/img/shots/erlangga/drb-02.png";
+import shots_erlangga3 from "./assets/img/shots/erlangga/drb-03.png";
+
+import shots_foodymeal1 from "./assets/img/shots/foodymeal/drb-01.png";
+import shots_foodymeal2 from "./assets/img/shots/foodymeal/drb-02.png";
+import shots_foodymeal3 from "./assets/img/shots/foodymeal/drb-03.png";
+import shots_foodymeal4 from "./assets/img/shots/foodymeal/drb-04.png";
+
+import shots_totalprime1 from "./assets/img/shots/totalprime/drb-01.png";
+import shots_totalprime2 from "./assets/img/shots/totalprime/drb-02.png";
+import shots_totalprime3 from "./assets/img/shots/totalprime/drb-03.png";
+import shots_totalprime4 from "./assets/img/shots/totalprime/drb-04.png";
+
 export const projects = [
   {
     title: "JakTrans",
@@ -165,4 +190,55 @@ export const sosmed = [
   },
 ];
 
-export const shots = [];
+export const shots = [
+  {
+    id: 1,
+    title: "Catatan Pintar",
+    cover: shots_catatanpintar_cover,
+    desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
+    images: [
+      shots_catatanpintar1,
+      shots_catatanpintar2,
+      shots_catatanpintar3,
+      shots_catatanpintar4,
+    ],
+  },
+  {
+    id: 2,
+    title: "Cimory Diaryland",
+    cover: shots_cimory1,
+    desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
+    images: [shots_cimory1, shots_cimory2, shots_cimory3, shots_cimory4],
+  },
+  {
+    id: 3,
+    title: "Erlangga Learning App",
+    cover: shots_erlangga1,
+    desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
+    images: [shots_erlangga1, shots_erlangga2, shots_erlangga3],
+  },
+  {
+    id: 4,
+    title: "Foodymeal",
+    cover: shots_foodymeal3,
+    desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
+    images: [
+      shots_foodymeal3,
+      shots_foodymeal1,
+      shots_foodymeal2,
+      shots_foodymeal4,
+    ],
+  },
+  {
+    id: 5,
+    title: "TOTAL PRIME ENGINEERING",
+    cover: shots_totalprime1,
+    desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
+    images: [
+      shots_totalprime1,
+      shots_totalprime2,
+      shots_totalprime3,
+      shots_totalprime4,
+    ],
+  },
+];

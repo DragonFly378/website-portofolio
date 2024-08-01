@@ -85,15 +85,8 @@ const JakTrans = () => {
                 </div>
                 <div className="job-tools-role flex flex-col gap-y-4 lg:gap-y-8">
                   <div className="jobs grid grid-cols-12 lg:gap-x-6 gap-y-4">
-                    <div className="client col-span-6 lg:col-span-3">
-                      <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                        Client
-                      </div>
-                      <div className="caption text-light-blue text-base lg:text-lg">
-                        Insan Desain
-                      </div>
-                    </div>{" "}
-                    <div className="client col-span-6 lg:col-span-3">
+                    
+                    <div className="Duration col-span-6 lg:col-span-3">
                       <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
                         Duration
                       </div>
