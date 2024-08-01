@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   const location = useLocation();
 
   const path = location.pathname;
-  console.log(path);
+  // console.log(path);
   return (
     <>
       <Navbar active={path} />

@@ -21,7 +21,7 @@ const Navbar = ({ active }) => {
     },
   ];
 
-  console.log(isOpen);
+  // console.log(isOpen);
   return (
     <section className="navbar-section py-5 sticky top-0 z-40 bg-dark-blue bg-opacity-60 backdrop-blur-[30px]">
       {/* mobile view */}

@@ -8,9 +8,9 @@ const Shots = () => {
     <>
       <Layout>
         <section className={`shots-section`}>
-          <div className="shots-contents mt-12 pt-10 pb-16 lg:mt-0 lg:py-14">
+          <div className="shots-contents mt-8 pb-16 lg:mt-0 lg:py-14">
             <div className="w-11/12 lg:w-6/12 mx-auto flex flex-col gap-y-2 lg:gap-y-4">
-              <div className="text-orange text-center underline text-xl  lg:text-3xl lg:mb-4 font-rodetta">
+              <div className="text-orange text-center underline text-xl  lg:text-3xl mb-8 font-rodetta">
                 Exploration Shots
               </div>{" "}
               <div className="shots-placeholder grid grid-cols-12 lg:gap-x-5 gap-y-7">

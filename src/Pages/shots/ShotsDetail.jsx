@@ -22,9 +22,7 @@ const ShotsDetail = () => {
   };
 
   useEffect(() => {
-    return () => {
-      getShotData();
-    };
+    getShotData();
   }, [id]);
 
   // console.log(shotNow);
@@ -33,7 +31,7 @@ const ShotsDetail = () => {
     <>
       <Layout>
         <section className="shot-detail">
-          <div className="shots-contents mt-12 pt-10 pb-16 lg:mt-0 lg:py-14">
+          <div className="shots-contents mt-4 pt-10 pb-16 lg:mt-0 lg:py-14">
             <div className="w-11/12 lg:w-6/12 mx-auto flex flex-col gap-y-2 lg:gap-y-4">
               <div className="text-orange text-center underline text-xl  lg:text-3xl lg:mb-4 font-rodetta">
                 {shotNow?.title}
