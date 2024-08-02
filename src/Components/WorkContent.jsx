@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const WorkContent = ({ data, imgPos }) => {
   return (
     <>
-      <div className="w-8/12 lg:w-5/12 mx-auto grid grid-cols-1 gap-y-5 lg:grid-cols-12 lg:gap-x-8 my-14 lg:my-12">
+      <a
+        href={data.actions[0].link}
+        className="w-8/12 lg:w-5/12 mx-auto grid grid-cols-1 gap-y-5 lg:grid-cols-12 lg:gap-x-8 my-14 lg:my-12"
+      >
         <div
           className={`content-image lg:col-span-6  ${
             imgPos % 2 === 0 ? "lg:order-first" : "lg:order-last"
@@ -13,9 +16,7 @@ const WorkContent = ({ data, imgPos }) => {
           <img src={data.img} alt="img" />
         </div>
         <div className="content-data flex flex-col gap-y-1 lg:col-span-6 lg:my-auto">
-          <div
-            className="judul text-orange text-xl lg:text-4xl lg:mb-4 font-rodetta"
-          >
+          <div className="judul text-orange text-xl lg:text-4xl lg:mb-4 font-rodetta">
             {data.title}
           </div>
           <div className="desc text-sm lg:text-base font-thin text-left text-light-blue mb-1 decoration-transparent">
@@ -45,7 +46,7 @@ const WorkContent = ({ data, imgPos }) => {
             ))}
           </div>
         </div>
-      </div>
+      </a>
     </>
   );
 };

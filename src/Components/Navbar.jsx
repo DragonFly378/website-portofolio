@@ -13,7 +13,7 @@ const Navbar = ({ active }) => {
     { name: "Home", value: "/" },
     { name: "Projects", value: "/projects" },
     { name: "Shots", value: "/shots" },
-    { name: "About me", value: "/about" },
+    // { name: "About me", value: "/about" },
     {
       name: "Contact me 🤙",
       value: "/contact",
