@@ -17,7 +17,7 @@ const LinkCard = React.memo(({ title, url, description, emoji, delay }) => {
       href={url}
       target="_blank"
       rel="noreferrer"
-      className={`link-card group relative w-full bg-gradient-to-r from-dark-blue to-dark-blue border-2 border-orange/60 rounded-2xl p-6 sm:p-7 lg:p-8 overflow-hidden transition-all duration-500 ease-out transform active:scale-95 ${
+      className={`link-card group relative w-full bg-gradient-to-r from-dark-blue to-dark-blue border-2 border-orange/60 rounded-2xl p-6 sm:p-2 lg:p-8 overflow-hidden transition-all duration-500 ease-out transform active:scale-95 ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
       } hover:border-orange hover:shadow-2xl hover:shadow-orange/40 lg:hover:-translate-y-2 min-h-[88px] sm:min-h-[100px]`}
       style={{ transitionDelay: `${delay}ms` }}
@@ -30,7 +30,7 @@ const LinkCard = React.memo(({ title, url, description, emoji, delay }) => {
 
       <div className="relative flex items-center gap-x-4 sm:gap-x-5">
         {emoji && (
-          <div className="icon text-5xl sm:text-6xl lg:text-6xl flex-shrink-0 transform group-hover:scale-110 group-hover:rotate-12 group-active:scale-110 group-active:rotate-12 transition-all duration-300">
+          <div className="icon text-3xl sm:text-4xl lg:text-6xl flex-shrink-0 transform group-hover:scale-110 group-hover:rotate-12 group-active:scale-110 group-active:rotate-12 transition-all duration-300">
             {emoji}
           </div>
         )}
@@ -90,6 +90,12 @@ const Link = () => {
       emoji: "📖",
     },
     {
+      title: "Hafiz's Portfolio",
+      url: "https://dragonfly378.my.id",
+      description: "Portfolio pribadi Muhammad Hafiz Hisbullah",
+      emoji: "💼",
+    },
+    {
       title: "Pesan Kopi @Terasbrew",
       url: "https://www.instagram.com/terasbrew/",
       description: "Coffee shop terbaik untuk ngopi santai",
@@ -99,7 +105,7 @@ const Link = () => {
       title: "Talk about project @TERASLABS",
       url: "https://www.instagram.com/teraslabs/",
       description: "Diskusi dan kolaborasi project menarik",
-      emoji: "💼",
+      emoji: "🛠️",
     },
   ];
 
