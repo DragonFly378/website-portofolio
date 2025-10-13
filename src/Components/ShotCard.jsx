@@ -1,42 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { swap } from "../features/shots/getShots";
 
-const ShotCard = ({ shotData, shotIdx }) => {
-  const shotNow = useSelector((state) => state.shot.data);
+const ShotCard = React.memo(({ shotData, shotIdx }) => {
   const dispatch = useDispatch();
 
-  // console.log(shotNow);
+  const handleClick = () => {
+    dispatch(swap(shotData));
+  };
 
   return (
-    <>
-      <Link
-        onClick={() => dispatch(swap(shotData))}
-        to={`/shots/${shotIdx + 1}`}
-        key={shotIdx}
-        className="shot-card col-span-12 lg:col-span-6"
-      >
-        <div className="image-header w-full">
-          <img
-            src={shotData.cover}
-            alt="catatanpintar-cover"
-            className="rounded-lg"
-          />
-        </div>
-        {/* <button
-          className="bg-blue-300 flex mx-auto"
-          onClick={() => dispatch(swap(shotData))}
-        >
-          Click Me
-        </button> */}
+    <Link
+      onClick={handleClick}
+      to={`/shots/${shotIdx + 1}`}
+      className="shot-card col-span-12 lg:col-span-6"
+    >
+      <div className="image-header w-full">
+        <img
+          src={shotData.cover}
+          alt={shotData.title}
+          className="rounded-lg"
+          loading="lazy"
+        />
+      </div>
 
-        <div className="title text-orange text-center text-sm lg:text-lg font-rodetta my-4">
-          {shotData.title}
-        </div>
-      </Link>
-    </>
+      <div className="title text-orange text-center text-sm lg:text-lg font-rodetta my-4">
+        {shotData.title}
+      </div>
+    </Link>
   );
-};
+});
+
+ShotCard.displayName = "ShotCard";
 
 export default ShotCard;
