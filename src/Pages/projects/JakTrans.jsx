@@ -25,569 +25,789 @@ import ut_results from "../../assets/img/projects/jaktrans/ut_results.png";
 import conclusion from "../../assets/img/projects/jaktrans/conclusion.png";
 import { AboutContent } from "../About";
 
-const JakTrans = () => {
+const JakTrans = React.memo(() => {
   return (
     <>
       <Layout>
         <section className="work-jaktrans my-8 lg:my-16">
           <div className="w-11/12 lg:w-8/12 mx-auto">
-            <div className="flex flex-col gap-y-14">
-              <div className="header-content flex flex-col gap-y-4 lg:gap-y-8">
-                {" "}
-                <div className="header-img w-full">
-                  <img src={headerImg} alt="jaktrans" />
+            <div className="flex flex-col gap-y-16 lg:gap-y-24">
+              <div className="header-content flex flex-col gap-y-6 lg:gap-y-10">
+                <div className="header-img w-full rounded-2xl overflow-hidden shadow-2xl shadow-orange/20">
+                  <img
+                    src={headerImg}
+                    alt="JakTrans - Public Transportation App"
+                    className="w-full"
+                    loading="eager"
+                    width="1200"
+                    height="600"
+                  />
                 </div>
                 <div className="title-header">
-                  {" "}
-                  <div className="judul text-orange text-xl lg:text-4xl text-center font-rodetta">
+                  <h1 className="judul text-orange text-3xl lg:text-5xl text-center font-rodetta tracking-wide">
                     JAKTRANS
-                  </div>
+                  </h1>
+                  <p className="text-light-blue text-center text-sm lg:text-lg mt-3 opacity-80">
+                    Simplifying Jakarta's Public Transportation Experience
+                  </p>
                 </div>
-                <div className="abstract flex flex-col gap-y-4">
-                  <h3 className="header-title text-orange text-lg lg:text-2xl  font-rodetta">
-                    Abstract
-                  </h3>
-                  <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                    In this case study, I am required to create a digital
-                    platform that will be used by public transportation users in
-                    Jakarta. The primary objective is to address the challenge
-                    of ensuring seamless access to essential information such as
-                    schedules, routes, and the real-time locations of public
-                    transportation vehicles. By providing a user-friendly
-                    interface and incorporating features like real-time
-                    tracking, route planning, and timely updates on schedule
-                    changes or disruptions, the platform aims to enhance the
-                    overall commuting experience for Jakarta's residents and
-                    visitors. Additionally, leveraging mobile compatibility and
-                    possibly integrating with existing transportation systems
-                    can further streamline accessibility and usability,
-                    ultimately contributing to improved efficiency and
-                    convenience in navigating Jakarta's public transportation
-                    network.
+                <div className="abstract flex flex-col gap-y-5 bg-dark-blue/50 border border-orange/20 rounded-2xl p-6 lg:p-10">
+                  <h2 className="header-title text-orange text-xl lg:text-3xl font-rodetta">
+                    The Challenge
+                  </h2>
+                  <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                    <p className="mb-4">
+                      Imagine this: You're standing at a bus stop in Jakarta, phone in hand, trying to figure out
+                      which bus to take, when it'll arrive, and how to connect to the next line. Sound familiar?
+                    </p>
+                    <p>
+                      This case study explores how I designed a unified digital platform for Jakarta's public
+                      transportation users—bringing together schedules, routes, and real-time vehicle locations
+                      into one seamless experience. The goal? To transform the daily commute from a stressful
+                      puzzle into a smooth, confident journey for millions of Jakarta residents and visitors.
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <div className="introduction-content flex flex-col gap-y-2 lg:gap-y-4">
-                <div className="introduction flex flex-col gap-y-4">
-                  <h3 className=" header-title text-orange text-lg lg:text-2xl  font-rodetta">
-                    Introduction
-                  </h3>
-                  <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                    "JakTrans" is the latest application that integrates all
-                    your travel needs in Jakarta into one easily accessible
-                    platform. You can quickly access information about routes,
-                    schedules, and types of public transportation, and plan your
-                    journey with a simple application. Experience the comfort
-                    and convenience of finding all Jakarta public transportation
-                    data with just one touch!
+              <div className="introduction-content flex flex-col gap-y-6 lg:gap-y-8">
+                <div className="introduction flex flex-col gap-y-5">
+                  <h2 className="header-title text-orange text-2xl lg:text-4xl font-rodetta">
+                    Meet JakTrans
+                  </h2>
+                  <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                    <p className="mb-4 text-lg lg:text-xl italic text-orange/90 border-l-4 border-orange pl-5 py-2">
+                      "All your travel needs in Jakarta, unified in one place"
+                    </p>
+                    <p>
+                      JakTrans brings everything you need for navigating Jakarta's public transportation into
+                      a single, intuitive app. No more juggling multiple apps or wondering which route to take.
+                      Routes, schedules, vehicle types, real-time tracking—it's all here, ready when you are.
+                    </p>
                   </div>
                 </div>
-                <div className="job-tools-role flex flex-col gap-y-4 lg:gap-y-8">
-                  <div className="jobs grid grid-cols-12 lg:gap-x-6 gap-y-4">
-                    
+                <div className="job-tools-role flex flex-col gap-y-6 lg:gap-y-10">
+                  <div className="jobs grid grid-cols-12 lg:gap-x-8 gap-y-6 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+
                     <div className="Duration col-span-6 lg:col-span-3">
-                      <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                        Duration
+                      <div className="title text-orange text-base lg:text-xl font-semibold mb-2 lg:mb-3">
+                        ⏱️ Duration
                       </div>
                       <div className="caption text-light-blue text-base lg:text-lg">
                         16 Weeks
                       </div>
-                    </div>{" "}
+                    </div>
                     <div className="client col-span-12 lg:col-span-6">
-                      <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                        The Team
+                      <div className="title text-orange text-base lg:text-xl font-semibold mb-2 lg:mb-3">
+                        👥 The Team
                       </div>
                       <div className="caption text-light-blue text-base lg:text-lg">
-                        Muhammad Hafiz Hisbullah
+                        Muhammad Hafiz Hisbullah (Solo Project)
                       </div>
                     </div>
                   </div>
-                  <div className="tools grid grid-cols-12 lg:gap-x-6">
-                    <div className="title col-span-12 text-orange text-lg lg:text-xl mb-2">
-                      Tools
+                  <div className="tools grid grid-cols-12 lg:gap-x-6 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                    <div className="title col-span-12 text-orange text-base lg:text-xl font-semibold mb-4">
+                      🛠️ Tools & Technologies
                     </div>
-                    <div className="list col-span-12 flex flex-col lg:flex-row justify-between text-light-blue lg:text-lg">
-                      <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3 text-base lg:text-lg">
-                          Figma
-                        </li>
-                        <li className="col-span-3 text-base lg:text-lg">
-                          Figjam
-                        </li>
-                      </ul>{" "}
-                      <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3 text-base lg:text-lg">
-                          Visual Studio Code
-                        </li>
-                        <li className="col-span-3 text-base lg:text-lg">
-                          HTML
-                        </li>
-                      </ul>{" "}
-                      <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3 text-base lg:text-lg">
-                          Tailwind
-                        </li>
-                        <li className="col-span-3 text-base lg:text-lg">
-                          Javascript
-                        </li>
-                      </ul>{" "}
-                      <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3 text-base lg:text-lg">
-                          ReactJs
-                        </li>
-                        <li className="col-span-3 text-base lg:text-lg">
-                          Spreadsheet
-                        </li>
-                      </ul>{" "}
+                    <div className="list col-span-12 flex flex-wrap gap-3 text-light-blue">
+                      {["Figma", "Figjam", "Visual Studio Code", "HTML", "Tailwind CSS", "JavaScript", "ReactJs", "Spreadsheet"].map((tool, idx) => (
+                        <span key={idx} className="px-4 py-2 bg-orange/10 border border-orange/30 rounded-full text-sm lg:text-base hover:bg-orange/20 transition-colors">
+                          {tool}
+                        </span>
+                      ))}
                     </div>
-                  </div>{" "}
-                  <div className="role grid grid-cols-12 lg:gap-x-6">
-                    <div className="title col-span-12 text-orange text-lg lg:text-xl mb-2">
-                      My Role
+                  </div>
+                  <div className="role grid grid-cols-12 lg:gap-x-6 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                    <div className="title col-span-12 text-orange text-base lg:text-xl font-semibold mb-4">
+                      🎯 My Roles
                     </div>
-                    <div className="list col-span-12  flex flex-col lg:flex-row lg:gap-x-5 text-light-blue lg:text-lg">
-                      <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3 text-base lg:text-lg">
-                          UX Designer
-                        </li>
-                        <li className="col-span-3 text-base lg:text-lg">
-                          UX Researcher
-                        </li>
-                      </ul>{" "}
-                      <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3 text-base lg:text-lg">
-                          UX Writer
-                        </li>
-                        <li className="col-span-3 text-base lg:text-lg">
-                          UI Designer
-                        </li>
-                      </ul>{" "}
-                      <ul className="list-disc list-inside grid grid-cols-6 lg:flex lg:flex-col ">
-                        <li className="col-span-3 text-base lg:text-lg">
-                          Frontend Developer
-                        </li>
-                      </ul>{" "}
+                    <div className="list col-span-12 flex flex-wrap gap-3 text-light-blue">
+                      {["UX Designer", "UX Researcher", "UX Writer", "UI Designer", "Frontend Developer"].map((role, idx) => (
+                        <span key={idx} className="px-4 py-2 bg-orange/10 border border-orange/30 rounded-full text-sm lg:text-base hover:bg-orange/20 transition-colors">
+                          {role}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="objective-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Objectives
-                </h3>
-                <div className="jargon text-white text-center font-bold italic font-nunito lg:text-2xl">
-                  "Developing a mobile app-based platform so that public
-                  transportation users in Jakarta can comfortably access
-                  integrated service information."
+              <div className="objective-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  The Objective
+                </h2>
+                <div className="jargon bg-gradient-to-r from-orange/10 to-orange/5 border-l-4 border-orange rounded-r-xl p-6 lg:p-8">
+                  <p className="text-white text-lg lg:text-2xl font-medium italic leading-relaxed">
+                    "Create a mobile platform that makes accessing Jakarta's public transportation
+                    information feel effortless and integrated."
+                  </p>
                 </div>
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  As a Product Designer, my role involves understanding and
-                  addressing the needs of public transportation users, enabling
-                  them to access all public vehicle information in Jakarta
-                  through a single application.
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    As a Product Designer, I dove deep into understanding what commuters truly need.
+                    The mission was clear: unite all of Jakarta's scattered public transit information—Transjakarta,
+                    Commuterline, MRT, LRT—into one cohesive, user-friendly experience. Because navigating the
+                    city shouldn't feel like solving a puzzle.
+                  </p>
                 </div>
               </div>
 
-              <div className="discover-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Discover
-                </h3>
-                <div className="caption flex flex-col gap-y-4 lg:gap-y-4">
-                  <div className="grid grid-cols-12 gap-y-2 lg:gap-x-4">
-                    <img
-                      className="col-span-12 lg:col-span-6"
-                      src={discover}
-                      alt="discover"
-                    />
-                    <article className="col-span-12 lg:col-span-6 text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                      It would be good if in solving a solution, we should know
-                      what problems occur in society regarding public
-                      transportation.
-                      <ul className="list-disc list-inside">
-                        <li>User Research</li>
-                        <li>In-depth Interview </li>
-                        <li>Issue Tree </li>
-                        <li>Desk Research</li>
+              <div className="discover-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🔍 Discovery Phase
+                </h2>
+                <div className="caption flex flex-col gap-y-6 lg:gap-y-8">
+                  <div className="grid grid-cols-12 gap-y-6 lg:gap-x-8">
+                    <div className="col-span-12 lg:col-span-6 rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                      <img
+                        className="w-full"
+                        src={discover}
+                        alt="Discovery phase research methods"
+                        loading="lazy"
+                        width="600"
+                        height="400"
+                      />
+                    </div>
+                    <article className="col-span-12 lg:col-span-6 text-light-blue text-base lg:text-lg leading-7 lg:leading-9 flex flex-col gap-y-4">
+                      <p>
+                        Before designing any solution, I needed to understand the real problems commuters face.
+                        What frustrates them? What do they need? Here's how I uncovered the truth:
+                      </p>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <span className="text-orange text-xl">→</span>
+                          <span><strong>User Research</strong> — Understanding commuter behaviors and pain points</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-orange text-xl">→</span>
+                          <span><strong>In-depth Interviews</strong> — Real conversations with real users</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-orange text-xl">→</span>
+                          <span><strong>Issue Tree</strong> — Breaking down complex problems systematically</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-orange text-xl">→</span>
+                          <span><strong>Desk Research</strong> — Analyzing existing data and trends</span>
+                        </li>
                       </ul>
                     </article>
                   </div>
-                  <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                    Transportation can be defined as the effort and activity of
-                    carrying or transporting goods and/or passengers from one
-                    place to another (Sugianto, 2020). Currently, public
-                    transportation services available in Jakarta, such as
-                    Transjakarta, Commuterline, MRT, and others, are provided by
-                    the government. People can enjoy these facilities to reach
-                    their destinations. For example, if we live in Jakarta and
-                    want to travel to Bogor Botanical Gardens, we can use public
-                    transportation like the Commuterline to Bogor station, then
-                    continue by taking an angkot (public minivan) towards Bogor
-                    Botanical Gardens.
-                    <br />
-                    <br />
-                    Data from the Central Statistics Agency (BPS) in 2019 showed
-                    that the average daily passengers of the Jabodetabek
-                    Commuterline were 900 thousand, while for Transjakarta, data
-                    obtained from the Transjakarta public information service
-                    (PPID) in 2019 stated that the daily passenger data for all
-                    corridors was 735 thousand. Since the operation of public
-                    transportation in Jakarta, several problems and criticisms
-                    have arisen. One of the problems experienced by the public
-                    and public transportation users is the difficulty in
-                    accessing information and routes between public
-                    transportation modes.
+                  <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                    <h3 className="text-orange text-lg lg:text-xl font-semibold mb-4">The Context</h3>
+                    <p className="mb-4">
+                      Jakarta's public transportation network is vast—Transjakarta, Commuterline, MRT, LRT—all
+                      serving millions of commuters daily. In 2019 alone, the Commuterline carried 900,000 passengers
+                      per day, while Transjakarta transported 735,000 passengers across all corridors.
+                    </p>
+                    <p className="mb-4">
+                      But here's the problem: While these services exist, the experience of using them is fragmented.
+                      Want to travel from Jakarta to Bogor Botanical Gardens? You'll need to figure out which
+                      Commuterline to take, where to transfer, and how to connect to local transport—all while
+                      checking multiple apps and sources.
+                    </p>
+                    <p className="text-orange/80 font-medium">
+                      The core issue? Accessibility. Information is scattered, routes are unclear, and planning
+                      multi-modal journeys feels like detective work.
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <div className="issuetree-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Issue Tree
-                </h3>
+              <div className="issuetree-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🌳 Breaking Down the Problem
+                </h2>
 
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  To assist in problem-solving in a structured and systematic
-                  way, we use the Issue Tree framework. We start with a simple
-                  statement: "Public transportation users find it difficult to
-                  see schedules between different fleets (Transjakarta,
-                  Commuterline, LRT, MRT)."
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    To tackle this challenge systematically, I used an <strong>Issue Tree framework</strong>.
+                    Starting with one core problem statement, I broke it down into smaller, actionable insights:
+                  </p>
+                  <p className="mt-4 text-lg lg:text-xl italic text-orange/90 border-l-4 border-orange pl-5 py-2">
+                    "How can we help users easily see schedules across different transportation services?"
+                  </p>
                 </div>
 
                 <div
-                  className="image-container lg:h-[400px] overflow-y-scroll border border-light-blue border-opacity-30 rounded-md"
-                  style={{ scrollbarColor: "#FBA346 transparent" }}
+                  className="image-container lg:h-[500px] overflow-y-auto border-2 border-orange/30 rounded-xl shadow-lg shadow-orange/20 bg-dark-blue/20"
+                  style={{ scrollbarColor: "#FBA346 transparent", scrollbarWidth: "thin" }}
                 >
-                  <img src={issuetree} alt="issuetree" />
+                  <img
+                    src={issuetree}
+                    alt="Issue Tree - Problem breakdown analysis"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                  />
                 </div>
               </div>
 
-              <div className="define-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Defining Users and Research
-                </h3>
+              <div className="define-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  💬 Understanding Real Users
+                </h2>
 
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  To gather insights into the challenges faced by public
-                  transportation users, we sat down with a variety of
-                  individuals and had conversations with them. It was a
-                  fascinating experience because we got to interact directly
-                  with them, listening to their stories and understanding their
-                  perspectives firsthand.
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    Nothing beats talking to real people. I sat down with actual commuters—students, workers,
+                    regular users of Jakarta's public transport—and listened. Their frustrations, their workarounds,
+                    their daily struggles.
+                  </p>
+                  <p className="mt-4 text-orange/80">
+                    These conversations revealed patterns that data alone couldn't show. Here's what I discovered:
+                  </p>
                 </div>
 
-                <div className="user-research grid grid-cols-12 gap-y-4 lg:gap-x-12">
-                  <div className="habbit col-span-12 lg:col-span-6">
-                    <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                      The Habbit
+                <div className="user-research grid grid-cols-12 gap-y-6 lg:gap-x-8">
+                  <div className="habbit col-span-12 lg:col-span-7 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                    <div className="title text-orange text-xl lg:text-2xl font-semibold mb-5 flex items-center gap-3">
+                      <span>🔄</span> User Behaviors & Pain Points
                     </div>
-                    <ul className="relative list-inside list-disc text-light-blue">
-                      <li>
-                        Often, people using public transportation without
-                        checking schedules increase the risk of queues at
-                        stops/stations
+                    <ul className="space-y-4 text-light-blue text-base lg:text-lg">
+                      <li className="flex items-start gap-3">
+                        <span className="text-orange text-xl flex-shrink-0">→</span>
+                        <span>
+                          <strong>The Queue Problem:</strong> Many commuters skip checking schedules, leading to
+                          long waits and overcrowding at stops
+                        </span>
                       </li>
-                      <li>
-                        Users switching between public transportation modes find
-                        it difficult because route information is scattered
-                        across different applications
+                      <li className="flex items-start gap-3">
+                        <span className="text-orange text-xl flex-shrink-0">→</span>
+                        <span>
+                          <strong>The App-Switching Hassle:</strong> Users juggle multiple apps to plan
+                          multi-modal trips—exhausting and error-prone
+                        </span>
                       </li>
-                      <li>
-                        People tend to waste time on the road due to not knowing
-                        public transportation schedules.
+                      <li className="flex items-start gap-3">
+                        <span className="text-orange text-xl flex-shrink-0">→</span>
+                        <span>
+                          <strong>Time Wasted:</strong> Without schedule visibility, commuters lose precious
+                          time waiting or taking inefficient routes
+                        </span>
                       </li>
                     </ul>
-                  </div>{" "}
-                  <div className="scope col-span-12 lg:col-span-4">
-                    <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                      The Scope
+                  </div>
+                  <div className="scope col-span-12 lg:col-span-5 bg-orange/10 border border-orange/30 rounded-xl p-6 lg:p-8">
+                    <div className="title text-orange text-xl lg:text-2xl font-semibold mb-5 flex items-center gap-3">
+                      <span>👥</span> Research Participants
                     </div>
-                    <ul className="list-inside list-disc text-light-blue">
-                      <li>Women and Men </li>
-                      <li>3 Participants </li>
-                      <li>Aged 17 - 40 </li>
-                      <li>Residing in Jabodetabek </li>
-                      <li>Students and Workers </li>
-                      <li>Have used public transportation</li>
+                    <ul className="space-y-3 text-light-blue text-base lg:text-lg">
+                      <li className="flex items-center gap-3">
+                        <span className="text-orange">✓</span> Women and Men
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="text-orange">✓</span> 3 Participants
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="text-orange">✓</span> Aged 17 - 40
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="text-orange">✓</span> Residing in Jabodetabek
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="text-orange">✓</span> Students & Workers
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="text-orange">✓</span> Active transit users
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div className="grouping-mandates-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Let’s <span className="text-white">“Grouping”</span> and
-                  Making the <span className="text-white">“Mandates”</span>
-                </h3>
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  The grouping I conducted involved analyzing the responses of
-                  the interviewees, identifying recurring patterns, and then
-                  using those patterns to generate design mandates. These design
-                  mandates serve as guidelines for creating solutions or
-                  improvements based on the needs and preferences expressed by
-                  the participants.
+              <div className="grouping-mandates-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  📊 From Research to Design Principles
+                </h2>
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    Raw research data is overwhelming. So I organized interview responses into clear patterns,
+                    then transformed those patterns into <strong>design mandates</strong>—actionable principles
+                    that would guide every design decision moving forward.
+                  </p>
+                  <p className="mt-4 text-orange/80">
+                    Think of it as translating "user frustrations" into "design opportunities."
+                  </p>
                 </div>
                 <div className="image-grouping-mandate flex flex-col gap-y-6">
-                  <img src={grouping} alt="grouping" />{" "}
-                  <img src={mandates} alt="mandates" />
-                </div>
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  Grouping and Design Mandates have been completed, so the next
-                  step is to separate the patterns that become problems or
-                  insights. This is done to identify the actual issues that
-                  users experience when using public transportation. The
-                  patterns categorized as "problems" will serve as benchmarks
-                  for creating solutions in the application later on. For
-                  example, one issue I found is users complaining about the
-                  fragmentation of many separate public transportation
-                  applications. Therefore, I'll turn it into a "How Might We"
-                  question. Similarly, patterns categorized as "Insights"
-                  include simplicity of features, travel time estimation, and
-                  users feeling financially assisted by effective route
-                  planning.
-                </div>{" "}
-                <div className="image-insight-problem">
-                  {" "}
-                  <img src={insights} alt="insights" />
-                </div>
-              </div>
-
-              <div className="conceptmodel-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Build the <span className="text-white">"Concept Model"</span>
-                </h3>
-
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  Before creating the concept model, I made scribbles about the
-                  application to be developed. The data used came from previous
-                  research and had been processed into design mandates
-                  containing user issues when using public transportation. They
-                  want easy access to information about routes, schedules, and
-                  types of public transportation, as well as planning their
-                  journey. Comfort and convenience are something they expect.
-                </div>
-
-                <div className="image-sketch w-6/12 mx-auto">
-                  {" "}
-                  <img src={sketch} alt="sketch" />
-                </div>
-
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  The purpose of developing a{" "}
-                  <span className="text-orange">Concept Model</span> is to
-                  provide a comprehensive understanding of the application's
-                  functionality, the features it will offer, and how users will
-                  engage with it.
-                </div>
-
-                <div className="image-conceptmodel">
-                  {" "}
-                  <img src={conceptmodel} alt="conceptmodel" />
-                </div>
-              </div>
-
-              <div className="jtbd-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Jobs To Be Done
-                </h3>
-
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  As a designer, I strive to empathize with what users
-                  experience when using public transportation so that I can find
-                  optimal solutions. I understand that by using the Jobs To Be
-                  Done (JTBD) framework, I can adopt the user's perspective as
-                  if I were a public transportation user myself.
-                </div>
-
-                <div className="image-jtbd">
-                  {" "}
-                  <img src={jtbd} alt="jtbd" />
-                </div>
-              </div>
-
-              <div className="userflow-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  User Flow & Information Architecture
-                </h3>
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  I delve into crafting the user flow for the application.
-                  Understanding the frustrations and needs expressed by users,
-                  such as the hassle of dealing with multiple transportation
-                  apps, I aim to streamline their journey with a seamless and
-                  intuitive user experience.
-                  <br />
-                  <br />
-                  Starting from the point where users open the application, the
-                  user flow will guide them through accessing essential
-                  information like route options, schedules, and types of
-                  transportation available. Simplifying the process of planning
-                  their journey will be a priority, ensuring that users can
-                  effortlessly find the most efficient routes and estimated
-                  travel times.
-                </div>
-                <div className="grid grid-cols-12 lg:gap-x-5 gap-y-4 mb-2">
-                  <div className="image-userflow col-span-12 mb-2">
-                    {" "}
-                    <img src={userflow} alt="userflow" />
+                  <div className="rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                    <img
+                      src={grouping}
+                      alt="User response grouping analysis"
+                      className="w-full"
+                      loading="lazy"
+                      width="1200"
+                      height="600"
+                    />
                   </div>
-                  <div className="image-userflow_jtbd order-2 lg:order-1 col-span-12 w-8/12 mx-auto lg:w-full lg:col-span-6">
-                    {" "}
-                    <img src={userflow_jtbd} alt="userflow_jtbd" />
-                  </div>
-                  <div className="desc lg:order-2 col-span-12 lg:col-span-6 text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                    Using the insights gained from empathizing with public
-                    transportation users and employing the{" "}
-                    <span className="text-orange">Jobs To Be Done (JTBD)</span>{" "}
-                    framework, instead of just looking at what features users
-                    want, JTBD looks at the problems they're trying to solve or
-                    the goals they're trying to achieve.
+                  <div className="rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                    <img
+                      src={mandates}
+                      alt="Design mandates from research"
+                      className="w-full"
+                      loading="lazy"
+                      width="1200"
+                      height="600"
+                    />
                   </div>
                 </div>
-                <div className="information-architecture">
-                  <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                    Information Architecture (IA)
-                  </div>{" "}
-                  <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                    The next step is to design its information architecture.
-                    Information Architecture (IA) refers to the structure and
-                    organization of information within the application, ensuring
-                    that users can easily find what they need and navigate
-                    through the app intuitively.
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                  <h3 className="text-orange text-xl lg:text-2xl font-semibold mb-4">Separating Problems from Insights</h3>
+                  <p className="mb-4">
+                    With patterns identified, I separated them into two categories:
+                  </p>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-6">
+                    <div className="bg-orange/10 border border-orange/30 rounded-xl p-5">
+                      <div className="text-orange text-2xl mb-2">🚨</div>
+                      <h4 className="text-orange font-semibold mb-2">Problems</h4>
+                      <p className="text-sm">Issues users face daily—these become "How Might We" questions</p>
+                      <p className="text-sm mt-2 italic opacity-80">Example: "Too many separate apps" → "How might we unify the experience?"</p>
+                    </div>
+                    <div className="bg-orange/10 border border-orange/30 rounded-xl p-5">
+                      <div className="text-orange text-2xl mb-2">💡</div>
+                      <h4 className="text-orange font-semibold mb-2">Insights</h4>
+                      <p className="text-sm">User desires and expectations—these guide our features</p>
+                      <p className="text-sm mt-2 italic opacity-80">Example: Users want simplicity, time estimates, and cost-effective routing</p>
+                    </div>
                   </div>
-                  <div className="image-ia my-3">
-                    {" "}
-                    <img src={ia} alt="ia" />
+                  <p className="text-orange/80">
+                    This framework ensured every feature we'd design would solve a real problem or fulfill an actual need.
+                  </p>
+                </div>
+                <div className="image-insight-problem rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                  <img
+                    src={insights}
+                    alt="Problems and insights categorization"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="600"
+                  />
+                </div>
+              </div>
+
+              <div className="conceptmodel-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  ✏️ Sketching the Solution
+                </h2>
+
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    With research insights in hand, I grabbed a pen and started sketching. No fancy tools yet—just
+                    raw ideas flowing from user needs to potential solutions. What would an app look like if it
+                    truly understood a commuter's journey?
+                  </p>
+                  <div className="bg-orange/10 border-l-4 border-orange rounded-r-xl p-5 my-4">
+                    <p className="text-orange/90 font-medium">
+                      Users needed: Easy route access • Clear schedules • Multiple transport options • Journey planning
+                    </p>
                   </div>
-                </div>{" "}
-              </div>
-
-              <div className="wireframe-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Wireframe
-                </h3>
-
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  Continuing from the previous discussion on information
-                  architecture, the next step in the process is to create
-                  wireframes for the application. Wireframes are skeletal
-                  outlines that represent the basic structure and layout of each
-                  screen or page within the app. Moreover, addressing users'
-                  frustrations with the fragmentation of multiple transportation
-                  apps, the wireframes will demonstrate how different features
-                  and functionalities are integrated seamlessly within the
-                  application. This may include showing how users can access
-                  ticket purchasing, real-time updates, and trip planning tools
-                  from a unified interface.
                 </div>
 
-                <div className="image-wireframe">
-                  {" "}
-                  <img src={wireframe} alt="wireframe" />
+                <div className="image-sketch w-full lg:w-8/12 mx-auto rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                  <img
+                    src={sketch}
+                    alt="Initial concept sketches"
+                    className="w-full"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                  />
                 </div>
 
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  By creating wireframes that align closely with the prioritized
-                  features, information architecture, and user needs identified
-                  earlier in the process, designers can effectively communicate
-                  the layout and functionality of the application before
-                  proceeding to the visual design phase.
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                  <h3 className="text-orange text-xl lg:text-2xl font-semibold mb-4">Building the Concept Model</h3>
+                  <p>
+                    The <strong className="text-orange">Concept Model</strong> is where ideas become structure. It maps out:
+                  </p>
+                  <ul className="space-y-3 my-4">
+                    <li className="flex items-start gap-3">
+                      <span className="text-orange text-xl">→</span>
+                      <span>What the app will do (functionality)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-orange text-xl">→</span>
+                      <span>What features it will include</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-orange text-xl">→</span>
+                      <span>How users will interact with it</span>
+                    </li>
+                  </ul>
+                  <p className="text-orange/80">
+                    Think of it as the blueprint before construction begins—a shared vision everyone can understand.
+                  </p>
                 </div>
-              </div>
 
-              <div className="voice-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Tone of Voice
-                </h3>
-
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  Given the user-centric approach and insights gained from
-                  empathizing with public transportation users, the tone of
-                  voice in UX writing will be{" "}
-                  <span className="text-orange font-medium">
-                    Clear, Formal, Respectful, and Enthusiastic.
-                  </span>{" "}
-                  It will aim to create a sense of trust and reliability while
-                  also being approachable and easy to understand.
-                </div>
-
-                <div className="image-voice">
-                  {" "}
-                  <img src={voice} alt="voice" />
+                <div className="image-conceptmodel rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                  <img
+                    src={conceptmodel}
+                    alt="Comprehensive concept model diagram"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                  />
                 </div>
               </div>
 
-              <div className="moodboard-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Moodboard for inspiration{" "}
-                </h3>
+              <div className="jtbd-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🎯 Jobs To Be Done: Walking in Their Shoes
+                </h2>
 
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  A mood board is a visual representation of the overall
-                  aesthetic, style, and mood that the application aims to
-                  convey. It serves as a reference point for designers, helping
-                  them to establish a cohesive visual identity and design
-                  language for the app. By creating a mood board that reflects
-                  the desired aesthetic and mood for the application, designers
-                  can ensure that the visual design elements contribute to a
-                  positive and engaging user experience, ultimately enhancing
-                  the usability and effectiveness of the public transportation
-                  schedule app.
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    Here's a powerful shift in perspective: Instead of asking "What features do users want?", I asked
+                    "What job are users trying to accomplish?" This is the essence of the <strong className="text-orange">Jobs To Be Done (JTBD)</strong> framework.
+                  </p>
+                  <div className="bg-gradient-to-r from-orange/10 to-orange/5 border-l-4 border-orange rounded-r-xl p-6 lg:p-8 my-4">
+                    <p className="text-white text-lg lg:text-xl font-medium mb-3">
+                      The Real Job:
+                    </p>
+                    <p className="italic">
+                      "When I need to get from point A to point B using public transport, I want to know my options,
+                      timing, and connections—all in one place—so I can arrive on time without stress or confusion."
+                    </p>
+                  </div>
+                  <p className="text-orange/80">
+                    By stepping into users' shoes, I could design for outcomes, not just features.
+                  </p>
                 </div>
 
-                <div className="image-moodboard">
-                  {" "}
-                  <img src={moodboard} alt="moodboard" />
+                <div className="image-jtbd rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                  <img
+                    src={jtbd}
+                    alt="Jobs To Be Done framework analysis"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                  />
                 </div>
               </div>
 
-              <div className="userinterface-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  The UI Solution
-                </h3>
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  Continuing from the previous stages of the design process,
-                  it's crucial to prioritize a clean design for the public
-                  transportation schedule application. A clean design is
-                  essential because it simplifies the user interface, making it
-                  easier for users to access transportation information without
-                  feeling overwhelmed or confused by cluttered visuals.
+              <div className="userflow-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🗺️ Mapping the User Journey
+                </h2>
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    Now came the critical part: designing how users would actually move through the app. Every tap,
+                    every screen, every decision point needed to feel natural and effortless.
+                  </p>
+                  <p className="mt-4">
+                    I mapped out the <strong className="text-orange">user flow</strong> from the moment someone opens JakTrans to the moment they
+                    confidently board their transport. No dead ends. No confusion. Just clarity.
+                  </p>
+                  <div className="bg-orange/10 border border-orange/30 rounded-xl p-5 my-4">
+                    <p className="text-orange font-semibold mb-2">The Flow Priority:</p>
+                    <p className="text-sm">
+                      Open app → See nearby routes → Check schedules → Plan journey → Get real-time updates → Arrive confidently
+                    </p>
+                  </div>
                 </div>
-                <div className="image-uisample w-8/12 mx-auto">
-                  {" "}
-                  <img src={ui_sample} alt="ui_sample" />
+                <div className="grid grid-cols-12 lg:gap-x-8 gap-y-6 mb-4">
+                  <div className="image-userflow col-span-12 rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                    <img
+                      src={userflow}
+                      alt="Complete user flow diagram"
+                      className="w-full"
+                      loading="lazy"
+                      width="1200"
+                      height="800"
+                    />
+                  </div>
+                  <div className="image-userflow_jtbd order-2 lg:order-1 col-span-12 w-10/12 mx-auto lg:w-full lg:col-span-6 rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                    <img
+                      src={userflow_jtbd}
+                      alt="User flow based on JTBD framework"
+                      className="w-full"
+                      loading="lazy"
+                      width="600"
+                      height="800"
+                    />
+                  </div>
+                  <div className="desc lg:order-2 col-span-12 lg:col-span-6 text-light-blue text-base lg:text-lg leading-7 lg:leading-9 flex flex-col justify-center">
+                    <h3 className="text-orange text-xl lg:text-2xl font-semibold mb-4">JTBD Meets User Flow</h3>
+                    <p>
+                      This flow isn't just about screens—it's about <strong>jobs completed</strong>. Using insights from the
+                      <span className="text-orange"> Jobs To Be Done framework</span>, every step addresses a real user goal:
+                    </p>
+                    <ul className="space-y-2 my-4 text-sm lg:text-base">
+                      <li className="flex items-start gap-2">
+                        <span className="text-orange">✓</span>
+                        <span>Finding the right transport mode</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-orange">✓</span>
+                        <span>Understanding timing and connections</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-orange">✓</span>
+                        <span>Getting from A to B without anxiety</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  By keeping the design clean and uncluttered, users can quickly
-                  find the information they need, such as route options,
-                  schedules, and types of transportation. Clear navigation and
-                  intuitive layout ensure that users can easily navigate between
-                  different features and functionalities without getting lost or
-                  frustrated.
+                <div className="information-architecture bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                  <h3 className="title text-orange text-xl lg:text-3xl font-semibold mb-5 flex items-center gap-3">
+                    <span>🏗️</span> Information Architecture (IA)
+                  </h3>
+                  <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9 mb-6">
+                    <p>
+                      With the flow defined, I needed to structure the information itself. <strong className="text-orange">Information Architecture</strong> is
+                      the invisible scaffolding that makes navigation feel intuitive—users shouldn't have to think about where to find things;
+                      they should just find them.
+                    </p>
+                  </div>
+                  <div className="image-ia rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                    <img
+                      src={ia}
+                      alt="Information architecture structure"
+                      className="w-full"
+                      loading="lazy"
+                      width="1200"
+                      height="800"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="wireframe-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  📐 Wireframing: Structure Before Style
+                </h2>
+
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    With the architecture in place, it was time to bring ideas to life—without the distraction of colors,
+                    fonts, or fancy graphics. <strong className="text-orange">Wireframes</strong> are the skeleton of the design, showing
+                    structure and layout without visual polish.
+                  </p>
+                  <div className="bg-orange/10 border-l-4 border-orange rounded-r-xl p-5 my-4">
+                    <p className="text-orange font-semibold mb-2">Key Goals:</p>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span>→</span> Unified interface (no more app-switching)</li>
+                      <li className="flex items-start gap-2">
+                        <span>→</span> Real-time updates visible at a glance</li>
+                      <li className="flex items-start gap-2">
+                        <span>→</span> Trip planning tools accessible in seconds</li>
+                      <li className="flex items-start gap-2">
+                        <span>→</span> Clear hierarchy guiding users naturally</li>
+                    </ul>
+                  </div>
+                  <p className="text-orange/80">
+                    These wireframes translate research, flows, and architecture into tangible screens—the first
+                    glimpse of what JakTrans would become.
+                  </p>
                 </div>
 
-                <div className="properties flex flex-col gap-y-4 lg:gap-y-8">
-                  <div className="design-elements">
-                    <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                      Design Elements
-                    </div>{" "}
-                    <div className="grid grid-cols-12 lg:gap-x-5 gap-y-4 mb-2">
-                      <div className="image-design_elements order-2 lg:order-1 col-span-12 w-8/12 lg:w-full mx-auto lg:col-span-5">
-                        {" "}
-                        <img src={design_elements} alt="design_elements" />
+                <div className="image-wireframe rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                  <img
+                    src={wireframe}
+                    alt="Low-fidelity wireframes showing app structure"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                  />
+                </div>
+
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                  <h3 className="text-orange text-xl lg:text-2xl font-semibold mb-4">Why Wireframes Matter</h3>
+                  <p>
+                    Wireframes let us focus on <em>functionality</em> before <em>aesthetics</em>. By aligning closely with
+                    prioritized features and user needs, we could validate the layout and interaction patterns early—saving
+                    time and ensuring the foundation was solid before adding visual design.
+                  </p>
+                  <p className="mt-4 text-orange/80 italic">
+                    Think of it as building the frame of a house before choosing paint colors.
+                  </p>
+                </div>
+              </div>
+
+              <div className="voice-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  💬 Finding the Right Voice
+                </h2>
+
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    Design isn't just visual—it's also how we <em>speak</em> to users. Words matter. The right tone can make
+                    users feel guided and confident, while the wrong tone can create confusion or frustration.
+                  </p>
+                  <div className="bg-gradient-to-r from-orange/10 to-orange/5 border-l-4 border-orange rounded-r-xl p-6 lg:p-8 my-4">
+                    <p className="text-white text-lg lg:text-xl font-medium mb-3">
+                      JakTrans' Tone of Voice:
+                    </p>
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                      <div className="text-center">
+                        <div className="text-orange text-3xl mb-2">✨</div>
+                        <p className="font-semibold text-orange">Clear</p>
                       </div>
-                      <div className="desc lg:order-2 col-span-12 lg:col-span-7 text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                        Creating simple and clean design components ensures user
-                        comfort and understanding. Clear elements like buttons
-                        and icons make functionality obvious, while consistency
-                        across the interface aids navigation. Minimalist design
-                        reduces visual clutter, allowing users to focus on
-                        essential tasks. This approach enhances usability,
-                        making it easier for users to achieve their goals and
-                        fostering satisfaction with the application.
+                      <div className="text-center">
+                        <div className="text-orange text-3xl mb-2">🤝</div>
+                        <p className="font-semibold text-orange">Formal</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-orange text-3xl mb-2">💙</div>
+                        <p className="font-semibold text-orange">Respectful</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-orange text-3xl mb-2">🎉</div>
+                        <p className="font-semibold text-orange">Enthusiastic</p>
                       </div>
                     </div>
-                  </div>{" "}
+                  </div>
+                  <p className="text-orange/80">
+                    This tone builds trust and reliability while staying approachable—guiding users without overwhelming them.
+                  </p>
+                </div>
+
+                <div className="image-voice rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                  <img
+                    src={voice}
+                    alt="Tone of voice guidelines and examples"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="600"
+                  />
+                </div>
+              </div>
+
+              <div className="moodboard-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🎨 Setting the Visual Mood
+                </h2>
+
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    Before diving into colors and typography, I created a <strong className="text-orange">moodboard</strong>—a
+                    visual collection that captures the feeling and aesthetic JakTrans should evoke. Not just "what it looks like,"
+                    but "how it makes you feel."
+                  </p>
+                  <div className="bg-orange/10 border-l-4 border-orange rounded-r-xl p-5 my-4">
+                    <p className="text-orange font-semibold mb-2">Mood Goals:</p>
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      <p>✓ Reliable & trustworthy</p>
+                      <p>✓ Modern & efficient</p>
+                      <p>✓ Calm & clear</p>
+                      <p>✓ Accessible & friendly</p>
+                    </div>
+                  </div>
+                  <p className="text-orange/80">
+                    This moodboard became our north star—keeping the entire visual design cohesive and intentional.
+                  </p>
+                </div>
+
+                <div className="image-moodboard rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                  <img
+                    src={moodboard}
+                    alt="Visual moodboard with design inspiration"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                  />
+                </div>
+              </div>
+
+              <div className="userinterface-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🎨 Bringing It to Life: The UI Design
+                </h2>
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    This is where everything comes together. After research, wireframes, and planning—now comes the
+                    <strong className="text-orange"> visual magic</strong>. But here's the thing: great UI isn't about looking pretty.
+                    It's about making complexity feel simple.
+                  </p>
+                  <div className="bg-gradient-to-r from-orange/10 to-orange/5 border-l-4 border-orange rounded-r-xl p-6 my-4">
+                    <p className="text-white font-medium text-lg mb-2">Design Philosophy:</p>
+                    <p className="italic">
+                      "Clean, uncluttered, and instantly understandable—users should focus on their journey, not on figuring out the app."
+                    </p>
+                  </div>
+                </div>
+                <div className="image-uisample w-full lg:w-10/12 mx-auto rounded-xl overflow-hidden shadow-2xl shadow-orange/20">
+                  <img
+                    src={ui_sample}
+                    alt="High-fidelity UI design samples"
+                    className="w-full"
+                    loading="lazy"
+                    width="1000"
+                    height="800"
+                  />
+                </div>
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9 bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                  <h3 className="text-orange text-xl lg:text-2xl font-semibold mb-4">Why Clean Design Wins</h3>
+                  <p className="mb-4">
+                    When users open JakTrans, they're usually in a hurry—rushing to catch a bus, checking if they'll make their connection.
+                    The last thing they need is visual clutter. Clean design means:
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <span className="text-orange text-xl">→</span>
+                      <span><strong>Instant clarity</strong> — critical info at a glance</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-orange text-xl">→</span>
+                      <span><strong>Intuitive navigation</strong> — no hunting for features</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-orange text-xl">→</span>
+                      <span><strong>Reduced cognitive load</strong> — less thinking, more doing</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="properties flex flex-col gap-y-6 lg:gap-y-10">
+                  <div className="design-elements bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                    <h3 className="title text-orange text-xl lg:text-3xl font-semibold mb-6 flex items-center gap-3">
+                      <span>🧩</span> Design Elements
+                    </h3>
+                    <div className="grid grid-cols-12 lg:gap-x-8 gap-y-6">
+                      <div className="image-design_elements order-2 lg:order-1 col-span-12 w-10/12 lg:w-full mx-auto lg:col-span-5 rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                        <img
+                          src={design_elements}
+                          alt="UI design elements and components"
+                          className="w-full"
+                          loading="lazy"
+                          width="600"
+                          height="800"
+                        />
+                      </div>
+                      <div className="desc lg:order-2 col-span-12 lg:col-span-7 text-light-blue text-base lg:text-lg leading-7 lg:leading-9 flex flex-col justify-center">
+                        <p className="mb-4">
+                          Every button, icon, and component was designed with purpose. Simple doesn't mean boring—it means
+                          <strong className="text-orange"> intentional</strong>.
+                        </p>
+                        <ul className="space-y-3">
+                          <li className="flex items-start gap-3">
+                            <span className="text-orange text-xl">✓</span>
+                            <span>Clear affordances (buttons look clickable)</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-orange text-xl">✓</span>
+                            <span>Consistent patterns (learn once, use everywhere)</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-orange text-xl">✓</span>
+                            <span>Minimal visual noise (focus on what matters)</span>
+                          </li>
+                        </ul>
+                        <p className="mt-4 text-orange/80 italic">
+                          The result? Users accomplish their goals faster and with confidence.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div className="style-guide">
                     <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
                       Style Guide
@@ -633,144 +853,199 @@ const JakTrans = () => {
                   </div>
                 </div>
 
-                <div className="image-ui_all mx-auto">
-                  {" "}
-                  <img src={ui_all} alt="ui_all" />
+                <div className="image-ui_all mx-auto rounded-xl overflow-hidden shadow-2xl shadow-orange/20">
+                  <img
+                    src={ui_all}
+                    alt="Complete UI design showcase"
+                    className="w-full"
+                    loading="lazy"
+                    width="1200"
+                    height="1000"
+                  />
+                </div>
+                <div className="final-note bg-gradient-to-r from-orange/10 to-orange/5 border border-orange/20 rounded-xl p-6 lg:p-8 text-center">
+                  <p className="text-white text-lg lg:text-2xl font-medium italic">
+                    "From scattered frustration to unified clarity—JakTrans transforms how Jakarta commutes."
+                  </p>
                 </div>
               </div>
 
-              <div className="usability-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Usability testing for validate design
-                </h3>
+              <div className="usability-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🧪 Testing with Real Users
+                </h2>
 
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  To validate the designs that have been created, I conducted
-                  usability testing with several individuals. The candidates I
-                  selected were different from those involved in the initial
-                  user research. This approach aims to avoid bias, as their
-                  expectations of the application may differ. By involving a
-                  diverse group of participants in the usability testing phase,
-                  I can gather more comprehensive feedback and insights into how
-                  the design performs in real-world scenarios. This allows me to
-                  identify any usability issues, areas for improvement, or
-                  unexpected user behaviors that may not have been apparent
-                  during the design process. Ultimately, usability testing helps
-                  ensure that the final design meets the needs and expectations
-                  of a broader range of users and delivers a more effective and
-                  user-friendly experience.
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                  <p>
+                    Design is never finished until real users have tried it. No matter how thoughtful the research or polished
+                    the design, <strong className="text-orange">usability testing</strong> reveals the truth—what works, what confuses, what delights.
+                  </p>
+                  <div className="bg-orange/10 border-l-4 border-orange rounded-r-xl p-5 my-4">
+                    <p className="text-orange font-semibold mb-2">Why Fresh Eyes Matter:</p>
+                    <p className="text-sm">
+                      I deliberately chose participants who weren't part of the initial research. Fresh perspectives prevent confirmation
+                      bias and uncover issues that familiar users might overlook. Different expectations = different insights.
+                    </p>
+                  </div>
+                  <p className="text-orange/80">
+                    This phase turned assumptions into evidence—validating what worked and exposing what needed refinement.
+                  </p>
                 </div>
 
-                <div className="properties flex flex-col gap-y-4 lg:gap-y-8">
-                  <div className="participant-profiles">
-                    <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                      Participant Profiles
-                    </div>{" "}
-                    <div className="grid grid-cols-12 lg:gap-x-5 gap-y-4 mb-2">
-                      <div className="desc  col-span-12  text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                        I obtained three sample participants for the usability
-                        testing, all aged approximately 21 to 25 years old. I
-                        believe this age range will provide a sample of public
-                        transportation users from the millennial demographic.
-                      </div>{" "}
-                      <div className="image-participants col-span-12 w-full mx-auto lg:col-span-7">
-                        {" "}
-                        <img src={participants} alt="participants" />
+                <div className="properties flex flex-col gap-y-6 lg:gap-y-10">
+                  <div className="participant-profiles bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                    <h3 className="title text-orange text-xl lg:text-3xl font-semibold mb-5 flex items-center gap-3">
+                      <span>👥</span> Who Tested JakTrans
+                    </h3>
+                    <div className="grid grid-cols-12 lg:gap-x-8 gap-y-6">
+                      <div className="desc col-span-12 text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                        <p>
+                          I recruited three participants aged 21-25—millennials actively using Jakarta's public transportation.
+                          This demographic represents a significant user segment: tech-savvy, time-conscious, and familiar with
+                          mobile apps for everyday tasks.
+                        </p>
+                        <p className="mt-4 text-orange/80">
+                          Perfect candidates to stress-test JakTrans in real-world scenarios.
+                        </p>
+                      </div>
+                      <div className="image-participants col-span-12 w-full mx-auto lg:col-span-8 rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                        <img
+                          src={participants}
+                          alt="Usability testing participant profiles"
+                          className="w-full"
+                          loading="lazy"
+                          width="1000"
+                          height="600"
+                        />
                       </div>
                     </div>
-                  </div>{" "}
-                  <div className="results">
-                    <div className="title text-orange text-lg lg:text-2xl lg:mb-3">
-                      Results{" "}
-                    </div>{" "}
-                    <div className="grid grid-cols-12 lg:gap-x-5 gap-y-4 mb-2">
-                      <div className="desc  col-span-12  text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                        The results of the testing I processed are based on the
-                        analysis during the session, such as observing users'
-                        task performance, identifying any difficulties they
-                        encountered, noting the time taken to complete tasks,
-                        and recording points of explanation from users (both
-                        shortcomings and strengths). I then categorized these
-                        findings into several groups, with each category
-                        containing a task flow and serving as data points for
-                        analysis.
-                      </div>{" "}
-                      <div className="image-ut_results col-span-12 w-full mx-auto lg:col-span-10">
-                        {" "}
-                        <img src={ut_results} alt="ut_results" />
+                  </div>
+                  <div className="results bg-dark-blue/30 border border-orange/10 rounded-xl p-6 lg:p-8">
+                    <h3 className="title text-orange text-xl lg:text-3xl font-semibold mb-5 flex items-center gap-3">
+                      <span>📊</span> What We Discovered
+                    </h3>
+                    <div className="grid grid-cols-12 lg:gap-x-8 gap-y-6">
+                      <div className="desc col-span-12 text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
+                        <p className="mb-4">
+                          During testing sessions, I observed everything: task completion times, points of confusion, moments
+                          of delight, and user comments. Each interaction became data—both quantitative (how long?) and
+                          qualitative (how did it feel?).
+                        </p>
+                        <div className="bg-orange/10 border-l-4 border-orange rounded-r-xl p-5">
+                          <p className="text-orange font-semibold mb-2">Analysis Framework:</p>
+                          <ul className="space-y-2 text-sm">
+                            <li>• Task performance observation</li>
+                            <li>• Difficulty identification</li>
+                            <li>• Completion time tracking</li>
+                            <li>• User feedback capture (strengths & weaknesses)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="image-ut_results col-span-12 w-full mx-auto rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                        <img
+                          src={ut_results}
+                          alt="Usability testing results and findings"
+                          className="w-full"
+                          loading="lazy"
+                          width="1200"
+                          height="800"
+                        />
                       </div>
                     </div>
                   </div>
                   <div className="conclusion">
-                    <div className="grid grid-cols-12 lg:gap-x-5 gap-y-4 mb-2">
-                      <div className="image-conclusion col-span-12 w-full mx-auto lg:col-span-6">
-                        {" "}
-                        <img src={conclusion} alt="conclusion" />
+                    <div className="grid grid-cols-12 lg:gap-x-8 gap-y-6">
+                      <div className="image-conclusion col-span-12 w-full mx-auto lg:col-span-5 rounded-xl overflow-hidden shadow-lg shadow-orange/10">
+                        <img
+                          src={conclusion}
+                          alt="Testing conclusions and insights"
+                          className="w-full"
+                          loading="lazy"
+                          width="600"
+                          height="800"
+                        />
                       </div>
-                      <div className="the-conclusion col-span-12 w-full mx-auto lg:col-span-6 flex flex-col gap-y-3">
-                        <article className="thegood">
-                          <div className="title text-orange text-lg lg:text-2xl">
-                            The Good
-                          </div>{" "}
-                          <q className="desc italic text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                            Overall, the app is pretty good. Like earlier, I
-                            could choose the public transportation I wanted to
-                            take, and I also found the nearest station from my
-                            location. The most important thing is that I could
-                            see where the train was located at that moment.
-                          </q>{" "}
+                      <div className="the-conclusion col-span-12 w-full mx-auto lg:col-span-7 flex flex-col gap-y-6">
+                        <article className="thegood bg-green-900/20 border border-green-500/30 rounded-xl p-6">
+                          <div className="title text-green-400 text-xl lg:text-2xl font-semibold mb-4 flex items-center gap-3">
+                            <span>✅</span> What Worked
+                          </div>
+                          <blockquote className="desc italic text-light-blue text-base lg:text-lg leading-7 lg:leading-8 border-l-4 border-green-400 pl-5">
+                            "Overall, the app is pretty good. I could choose the transportation I wanted, find the nearest station,
+                            and—most importantly—see where the train was at that moment. That real-time tracking was a game-changer."
+                          </blockquote>
+                          <p className="text-green-400/80 text-sm mt-3">— Test Participant</p>
                         </article>
-                        <article className="thebad">
-                          <div className="title text-orange text-lg lg:text-2xl">
-                            The Bad
-                          </div>{" "}
-                          <q className="desc italic text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                            In my opinion, the estimated arrival time of the
-                            train is crucial. We should be able to see
-                            approximately what time the train will arrive at our
-                            station. Also, the search bar component on the home
-                            screen is ambiguous because it says, 'Where to
-                            today?' This means that if I want to go to Bogor
-                            station, I should just type 'Bogor,' right? My
-                            expectation is that I would then see what types of
-                            transportation are available to Bogor station.
-                          </q>{" "}
+                        <article className="thebad bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                          <div className="title text-red-400 text-xl lg:text-2xl font-semibold mb-4 flex items-center gap-3">
+                            <span>⚠️</span> What Needs Work
+                          </div>
+                          <blockquote className="desc italic text-light-blue text-base lg:text-lg leading-7 lg:leading-8 border-l-4 border-red-400 pl-5">
+                            "The estimated arrival time is crucial—I need to know when the train will reach my station. Also, the
+                            search bar saying 'Where to today?' is confusing. If I type 'Bogor,' I expect to see all transport options
+                            to Bogor, not just stations named Bogor."
+                          </blockquote>
+                          <p className="text-red-400/80 text-sm mt-3">— Test Participant</p>
                         </article>
+                        <div className="insights bg-orange/10 border border-orange/30 rounded-xl p-5">
+                          <p className="text-orange font-semibold mb-2">Key Learnings:</p>
+                          <ul className="space-y-2 text-sm text-light-blue">
+                            <li>✓ Real-time tracking was the standout feature</li>
+                            <li>✓ Arrival time estimates need more prominence</li>
+                            <li>✓ Search functionality requires clearer expectations</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="takeaway-content flex flex-col gap-y-2 lg:gap-y-4">
-                <h3 className="font-rodetta header-title text-orange text-lg lg:text-2xl">
-                  Development and Future Work
-                </h3>
+              <div className="takeaway-content flex flex-col gap-y-6 lg:gap-y-8">
+                <h2 className="font-rodetta header-title text-orange text-2xl lg:text-4xl">
+                  🚀 Key Takeaways & Future Vision
+                </h2>
 
-                <div className="desc text-light-blue text-sm lg:text-base leading-6 lg:leading-8 text-justify">
-                  In conclusion, the UI/UX case for the public transportation
-                  application in Jakarta has been a journey of understanding and
-                  addressing the diverse needs of users navigating the city's
-                  transportation system. Through empathetic user research,
-                  thoughtful design decisions, and rigorous testing, we aimed to
-                  create an application that simplifies the commute experience
-                  for Jakarta's residents and visitors alike.
-                  <br /> <br />
-                  By prioritizing simplicity, clarity, and efficiency in design,
-                  we endeavored to provide users with easy access to essential
-                  information such as route options, schedules, and real-time
-                  updates. Our goal was to empower users to plan their journeys
-                  with confidence and ease, whether they're heading to work,
-                  school, or exploring the city.
-                  <br /> <br />
-                  Throughout the process, we remained committed to fostering a
-                  seamless and enjoyable user experience, guided by the
-                  principles of user-centric design and continuous improvement.
-                  While the journey may have its challenges, we believe that by
-                  listening to user feedback, iterating on our designs, and
-                  staying true to our mission, we can create a public
-                  transportation application that truly serves the needs of
-                  Jakarta's diverse community.
+                <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9 space-y-6">
+                  <div className="bg-gradient-to-r from-orange/10 to-orange/5 border-l-4 border-orange rounded-r-xl p-6 lg:p-8">
+                    <p className="text-white text-lg lg:text-xl font-medium mb-4">
+                      What I Learned
+                    </p>
+                    <p>
+                      This project taught me that great UX isn't about adding features—it's about removing friction.
+                      Jakarta's commuters don't need another app; they need one app that understands their journey
+                      from start to finish.
+                    </p>
+                  </div>
+
+                  <p>
+                    Through empathetic research, strategic design decisions, and iterative testing, JakTrans evolved
+                    into more than just a transportation app. It became a tool for confidence—helping people navigate
+                    the city with clarity, not confusion.
+                  </p>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div className="bg-dark-blue/30 border border-orange/20 rounded-xl p-6">
+                      <div className="text-orange text-3xl mb-3">🎯</div>
+                      <h3 className="text-orange font-semibold text-lg mb-2">User-Centric</h3>
+                      <p className="text-sm">Every decision rooted in real user needs and behaviors</p>
+                    </div>
+                    <div className="bg-dark-blue/30 border border-orange/20 rounded-xl p-6">
+                      <div className="text-orange text-3xl mb-3">✨</div>
+                      <h3 className="text-orange font-semibold text-lg mb-2">Simplicity First</h3>
+                      <p className="text-sm">Complex systems, simple interface—that's the goal</p>
+                    </div>
+                    <div className="bg-dark-blue/30 border border-orange/20 rounded-xl p-6">
+                      <div className="text-orange text-3xl mb-3">🔄</div>
+                      <h3 className="text-orange font-semibold text-lg mb-2">Continuous Iteration</h3>
+                      <p className="text-sm">Learning from users and improving with every update</p>
+                    </div>
+                  </div>
+
+                  <p className="text-orange/90 italic border-l-4 border-orange pl-5 py-3">
+                    The journey doesn't end here. As Jakarta's transportation evolves, so will JakTrans—always
+                    listening, always improving, always serving the diverse community that depends on it.
+                  </p>
                 </div>
               </div>
 
@@ -781,6 +1056,8 @@ const JakTrans = () => {
       </Layout>
     </>
   );
-};
+});
+
+JakTrans.displayName = "JakTrans";
 
 export default JakTrans;

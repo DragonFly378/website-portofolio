@@ -8,7 +8,7 @@ const Connect = React.memo(() => {
       <div className="title text-orange text-center text-sm lg:text-lg">
         Let's Connect!
       </div>
-      <div className="social-media flex text-light-blue gap-x-4 lg:gap-x-8 mt-3 lg:mt-4">
+      <div className="social-media flex justify-center text-light-blue gap-x-4 lg:gap-x-8 mt-3 lg:mt-4">
         {sosmed.map((item, itemIdx) => (
           <a
             key={itemIdx}
@@ -16,6 +16,7 @@ const Connect = React.memo(() => {
             target="_blank"
             rel="noreferrer"
             aria-label={`Connect on ${item.name}`}
+            className="hover:text-orange transform hover:scale-110 transition-all duration-300"
           >
             <FontAwesomeIcon
               className="lg:text-2xl text-xl"
