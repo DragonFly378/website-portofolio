@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/img/dragonfly.svg";
 import "./Link.css";
 
@@ -18,7 +22,7 @@ const LinkCard = React.memo(({ title, url, description, emoji, delay }) => {
       target="_blank"
       rel="noreferrer"
       className={`link-card group relative w-full bg-gradient-to-r from-dark-blue to-dark-blue border-2 border-orange/60 rounded-2xl p-6 sm:p-2 lg:p-8 overflow-hidden transition-all duration-500 ease-out transform active:scale-95 ${
-        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
       } hover:border-orange hover:shadow-2xl hover:shadow-orange/40 lg:hover:-translate-y-2 min-h-[88px] sm:min-h-[100px]`}
       style={{ transitionDelay: `${delay}ms` }}
     >
@@ -84,9 +88,9 @@ const Link = () => {
 
   const mainLinks = [
     {
-      title: "Baca Quran",
-      url: "https://taslim-site.vercel.app",
-      description: "Aplikasi untuk membaca Al-Quran online",
+      title: "Baca Quran dan Doa Harian",
+      url: "https://taslim.life",
+      description: "Website untuk membaca Al-Quran dan Doa sehari-hari",
       emoji: "📖",
     },
     {
