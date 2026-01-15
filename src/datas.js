@@ -6,6 +6,7 @@ import artsneakers from "./assets/img/artsneakers.png";
 import nomads from "./assets/img/nomads.png";
 import fgd from "./assets/img/fgd.png";
 import myquranku from "./assets/img/myquranku.png";
+import bolekaka from "./assets/img/projects/Bolekaka/bolekaka.png";
 import JakTrans from "./Pages/projects/JakTrans";
 import RwPintar from "./Pages/projects/RwPintar";
 import Uxin from "./Pages/projects/Uxin";
@@ -46,6 +47,19 @@ import shots_totalprime3 from "./assets/img/shots/totalprime/drb-03.png";
 import shots_totalprime4 from "./assets/img/shots/totalprime/drb-04.png";
 
 export const projects = [
+  {
+    title: "Bolekaka Binar",
+    root: "bolekaka",
+    desc: "Landing page for professional cleaning service company in Jabodetabek area. Built with Next.js and Tailwind CSS, featuring service packages, pricing plans, and WhatsApp integration for customer booking.",
+    img: bolekaka,
+    tags: ["UI/UX", "Frontend"],
+    actions: [
+      {
+        title: "View Project",
+        link: "https://bolekakabinar.com/",
+      },
+    ],
+  },
   {
     title: "JakTrans",
     root: "jaktrans",
