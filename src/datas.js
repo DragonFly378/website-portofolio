@@ -7,6 +7,7 @@ import nomads from "./assets/img/nomads.png";
 import fgd from "./assets/img/fgd.png";
 import myquranku from "./assets/img/myquranku.png";
 import bolekaka from "./assets/img/projects/Bolekaka/bolekaka.png";
+import taslimlife from "./assets/img/logo_taslim_full.png";
 import JakTrans from "./Pages/projects/JakTrans";
 import RwPintar from "./Pages/projects/RwPintar";
 import Uxin from "./Pages/projects/Uxin";
@@ -47,6 +48,19 @@ import shots_totalprime3 from "./assets/img/shots/totalprime/drb-03.png";
 import shots_totalprime4 from "./assets/img/shots/totalprime/drb-04.png";
 
 export const projects = [
+  {
+    title: "Taslim Life",
+    root: "taslimlife",
+    desc: "Your gateway to Islamic knowledge, anytime, anywhere. Taslim offers a seamless online learning experience with comprehensive features including Quran recitation, Hadith collections, and daily prayers. Empowering developers with open APIs for Quran, Hadith, and Dua integration.",
+    img: taslimlife,
+    tags: ["UI/UX", "Frontend", "Backend"],
+    actions: [
+      {
+        title: "View Project",
+        link: "https://taslim.life/",
+      },
+    ],
+  },
   {
     title: "Bolekaka Binar",
     root: "bolekaka",
