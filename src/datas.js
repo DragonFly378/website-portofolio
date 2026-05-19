@@ -8,7 +8,9 @@ import fgd from "./assets/img/fgd.png";
 import myquranku from "./assets/img/myquranku.png";
 import bolekaka from "./assets/img/projects/Bolekaka/bolekaka.png";
 import taslimlife from "./assets/img/logo_taslim_full.png";
+import ccphase from "./assets/img/projects/ccphase/logo_only.png";
 import JakTrans from "./Pages/projects/JakTrans";
+import CCPHASE from "./Pages/projects/CCPHASE";
 import RwPintar from "./Pages/projects/RwPintar";
 import Uxin from "./Pages/projects/Uxin";
 import Nomads from "./Pages/projects/Nomads";
@@ -48,6 +50,29 @@ import shots_totalprime3 from "./assets/img/shots/totalprime/drb-03.png";
 import shots_totalprime4 from "./assets/img/shots/totalprime/drb-04.png";
 
 export const projects = [
+  {
+    title: "CCPHASE - FIK UI",
+    root: "ccphase",
+    page: CCPHASE,
+    desc: "Designed two distinct website systems for CCPHASE (Climate Change, Planetary Health, and Sustainable Care), a research cluster under the Faculty of Nursing Science, Universitas Indonesia. Delivering high-fidelity designs for both WordPress and external platforms to represent world-class research impact to a global audience.",
+    img: ccphase,
+    imgBg: "bg-[#0a1628]",
+    tags: ["UI/UX", "Frontend", "PM"],
+    actions: [
+      {
+        title: "View Report",
+        link: "/project/ccphase",
+      },
+      {
+        title: "WordPress Site",
+        link: "https://frontiers.ui.ac.id/ccphase/",
+      },
+      {
+        title: "External Site",
+        link: "https://ccphase.netlify.app/",
+      },
+    ],
+  },
   {
     title: "Taslim Life",
     root: "taslimlife",

@@ -55,9 +55,9 @@ const WorkContent = React.memo(({ data, imgPos }) => {
             imgPos % 2 === 0 ? "lg:order-first" : "lg:order-last"
           }`}
         >
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-orange/20
+          <div className={`relative overflow-hidden rounded-2xl shadow-2xl shadow-orange/20
                         border-2 border-orange/10 group-hover:border-orange/30
-                        transition-all duration-500">
+                        transition-all duration-500 ${data.imgBg || ""}`}>
             <img
               src={data.img}
               alt={data.title}

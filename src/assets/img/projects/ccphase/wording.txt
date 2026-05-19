@@ -1,0 +1,94 @@
+CCPHASE — Designing a Research Cluster Website for FIK Universitas Indonesia
+Project Overview
+Client	Fakultas Ilmu Keperawatan, Universitas Indonesia (FIK UI)
+Project	CCPHASE — Research Cluster Website (UI/UX Design)
+Role	UI Designer & Frontend Consultant
+Deliverable	High-Fidelity Figma Design (2 Variants: WordPress + External Website)
+Tools	Figma, WordPress, Google Docs
+Status	Delivered ✔
+
+Background
+CCPHASE (Climate Change, Planetary Health, and Sustainable Care) adalah research cluster di bawah Fakultas Ilmu Keperawatan, Universitas Indonesia. Cluster ini berfokus pada riset lintas sektor di bidang perubahan iklim, kesehatan global, dan keperawatan berkelanjutan — dengan jangkauan penelitian di 12 provinsi di Indonesia serta kolaborasi dengan institusi internasional seperti WHO, Harvard, dan Universitas terkemuka lainnya.
+
+Ketika saya dilibatkan dalam proyek ini, CCPHASE baru saja mendapatkan pengakuan sebagai entitas riset resmi dan membutuhkan representasi digital yang kredibel, profesional, dan mampu mengkomunikasikan dampak riset mereka kepada audiens global — mulai dari peneliti, mahasiswa, mitra institusi, hingga pembuat kebijakan.
+
+The Challenge
+FIK UI datang dengan kebutuhan yang cukup kompleks: mereka tidak hanya butuh satu website — tapi dua sistem yang berbeda dengan tujuan yang berbeda pula.
+
+Website WordPress (internal/institutional) — untuk dikelola langsung oleh tim internal FIK UI tanpa keahlian coding. Platform ini harus bisa di-update secara mandiri oleh staf akademik.
+Website External (standalone) — lebih bebas secara visual, ditujukan untuk audiens internasional dan mitra kolaborasi global. Website ini harus mampu memproyeksikan identitas CCPHASE sebagai institusi riset berkelas dunia.
+Tantangan utama lainnya:
+
+— Menyeimbangkan tone akademik yang serius dengan desain yang modern dan accessible
+— Mengorganisir konten yang sangat dense (publikasi, proyek riset, tim peneliti, events, partnership) ke dalam struktur navigasi yang intuitif
+— Memastikan visual identity CCPHASE konsisten di seluruh halaman meskipun kontennya sangat beragam
+— Mendesain sistem yang skalabel — karena riset, publikasi, dan anggota tim akan terus bertambah
+
+My Process
+Discovery & Content Mapping
+Langkah pertama yang saya lakukan adalah memahami ekosistem CCPHASE secara menyeluruh. Saya membedah dokumen profil institusi, mempelajari fokus riset mereka (Climate Change Impact on Health, Planetary Health, Sustainable Nursing, Health Equity, Community Adaptation), serta mengidentifikasi semua jenis konten yang perlu ditampilkan: publikasi ilmiah, proyek riset aktif dan selesai, direktori tim peneliti, events & webinar, roadmap strategis, hingga jaringan mitra global.
+Dari sini saya menyusun content architecture dan information hierarchy yang menjadi fondasi struktur navigasi kedua website.
+
+2. Defining Two Design Systems
+Saya membuat dua design system yang berbeda namun tetap satu keluarga visual:
+
+WordPress Version — Menggunakan palet warna biru-putih yang clean dan institutional. Desain ini diprioritaskan pada keterbacaan dan kemudahan content management oleh tim non-teknis. Komponen-komponen didesain agar mudah direplikasi dalam blok WordPress standar.
+
+External Version — Menggunakan dark theme dengan warna navy deep dan aksen biru elektrik yang memberikan kesan premium dan futuristik. Visual language ini lebih ekspresif, dengan penggunaan data visualisasi, hero imagery yang kuat, dan motion-forward layout untuk menarik perhatian audiens internasional.
+
+Page-by-Page Design Execution
+Total halaman yang saya desain mencakup:
+Home Page — Hero section dengan messaging utama cluster, statistik impact (12 provinsi, cross-sector, applied impact), preview riset terbaru, dan pengenalan tim.
+
+About / Who We Are — Sejarah pendirian CCPHASE, visi dan misi, 4 pilar utama (Research, Education, Innovation, Advocacy), dan filosofi ilmiah cluster.
+
+Projects & News — Direktori proyek riset dengan kategori In Progress dan Completed, dilengkapi filter dan card layout yang informatif.
+
+Research & Publications — Repository publikasi ilmiah dengan featured publications, filter berdasarkan topik, dan integration metrics (45+ collaborations, 1.8K+ citations, 18+ countries).
+
+Partners & Collaborations — Showcase jaringan mitra strategis global (WHO, Harvard, National University, Mahidol University, dan lainnya) beserta manfaat kemitraan.
+
+Teams Page — Direktori tim peneliti dan kolaborator dengan profil card yang clean.
+
+Events & Webinar — Featured events, upcoming events, dan past events with recordings.
+
+Strategic Roadmap — Visualisasi roadmap pengembangan cluster yang menunjukkan arah riset jangka panjang.
+
+4. WordPress Implementation Guidance
+Sebagai bagian dari deliverable, saya juga menyiapkan content guidelines dan struktur konten WordPress yang memudahkan tim internal untuk langsung mengimplementasikan desain tanpa kehilangan konsistensi visual. Dokumen ini mencakup placeholder konten, struktur menu, dan catatan teknis per halaman.
+
+Design Decisions & Rationale
+Visual Identity
+Kedua versi website menggunakan logo CCPHASE yang sama — globe dengan ikon kesehatan — yang secara konsisten dikombinasikan dengan branding Universitas Indonesia. Warna biru dipilih sebagai primary karena mengkomunikasikan kepercayaan, keilmuan, dan profesionalisme, sementara aksen merah pada versi WordPress memperkuat asosiasi dengan UI.
+
+Information Architecture
+Dengan volume konten yang sangat besar, saya memilih struktur navigasi yang flat dan predictable. Setiap halaman dirancang untuk bisa diakses dalam maksimal 2 klik dari homepage. Saya juga membuat sistem kategorisasi konten yang memungkinkan filter dinamis — terutama untuk halaman Publications dan Projects yang volumenya akan terus berkembang.
+
+Storytelling Through Data
+Salah satu elemen yang saya tekankan adalah mengubah data riset menjadi narasi visual yang compelling. Angka seperti “45+ kolaborasi”, “1.8K+ sitasi”, “18+ negara”, dan “12 provinsi” tidak hanya ditampilkan sebagai teks — tapi dirancang sebagai elemen visual yang menjadi bukti nyata impact riset CCPHASE.
+
+Outcome & Impact
+Proyek ini berhasil diselesaikan dan dideliverikan penuh kepada FIK UI. Dua sistem desain high-fidelity tersedia di Figma — siap untuk langsung diimplementasikan oleh tim developer. Klien sangat puas dengan hasil akhir, terutama karena desain mampu merepresentasikan kelas dan skala CCPHASE sebagai research cluster yang beroperasi di tingkat internasional.
+
+Yang paling berkesan dari proyek ini adalah kompleksitasnya: saya tidak hanya mendesain tampilan — tapi membantu klien menjawab pertanyaan strategis seperti bagaimana memposisikan CCPHASE di mata dunia, bagaimana mengkomunikasikan riset ilmiah agar tetap accessible, dan bagaimana membangun digital presence yang bisa bertumbuh seiring skala cluster yang terus berkembang.
+
+Key Takeaways
+Proyek CCPHASE memperkuat kemampuan saya dalam:
+
+— Mendesain untuk institusi akademik dengan multi-audience (akademisi, mahasiswa, publik, mitra internasional)
+— Mengelola kompleksitas content architecture dengan tetap menjaga UX yang bersih dan intuitif
+— Menyesuaikan design system ke constraint platform yang berbeda (WordPress vs custom)
+— Berkomunikasi dengan client dari domain akademik yang memiliki ekspektasi presisi tinggi terhadap representasi data dan konten riset
+— Mengerjakan proyek end-to-end secara mandiri: dari discovery, wireframe, design system, hingga handoff documentation
+
+What This Means for You as a Client
+Kalau kamu punya kebutuhan serupa — website untuk institusi, organisasi riset, startup, atau bisnis yang ingin tampil profesional dan punya digital presence yang kuat — saya tahu cara mengerjakannya.
+
+Saya tidak hanya mendesain yang “cantik” — saya mendesain dengan tujuan. Setiap keputusan visual punya alasan strategis: siapa audiensnya, apa pesan utamanya, bagaimana user akan berinteraksi, dan bagaimana desain ini akan bertahan dan berkembang seiring bisnis kamu tumbuh.
+
+Mari diskusi proyekmu — hubungi saya lewat form contact atau langsung via email.
+
+Design Preview
+Figma File: https://www.figma.com/design/FI4JF1H11cN117MAZ1e6pu/WEBSITE-CCPHASE
+
+[Catatan untuk website builder: tambahkan screenshot atau mockup preview dari Figma di sini — Home Page, About Page, Research & Publications, Partners Page]
