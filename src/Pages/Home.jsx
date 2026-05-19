@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../Components/SEO";
 import Jumbotron from "../Components/Jumbotron";
 import Layout from "../Layout/Layout";
 import About from "./About";
@@ -7,6 +8,7 @@ import Work from "./Work";
 const Home = () => {
   return (
     <Layout>
+      <SEO />
       <Jumbotron />
       <Work page={false} />
       <About page={false} />

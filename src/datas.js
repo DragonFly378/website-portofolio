@@ -24,7 +24,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-import shots_ccphase_cover from "./assets/img/projects/ccphase/ext_Home Page.png";
+import shots_ccphase_cover from "./assets/img/projects/ccphase/cover_shots.png";
 import shots_ccphase1 from "./assets/img/projects/ccphase/ext_About Page.png";
 import shots_ccphase2 from "./assets/img/projects/ccphase/ext_Research & Publications.png";
 import shots_ccphase3 from "./assets/img/projects/ccphase/wp_Home Page.png";
@@ -61,6 +61,7 @@ export const projects = [
     root: "ccphase",
     page: CCPHASE,
     desc: "Designed two distinct website systems for CCPHASE (Climate Change, Planetary Health, and Sustainable Care), a research cluster under the Faculty of Nursing Science, Universitas Indonesia. Delivering high-fidelity designs for both WordPress and external platforms to represent world-class research impact to a global audience.",
+    metaDesc: "Case study: Designing two website systems for CCPHASE, a climate change and health research cluster under FIK Universitas Indonesia.",
     img: ccphase,
     imgBg: "bg-[#0a1628]",
     tags: ["UI/UX", "Frontend", "PM"],
@@ -110,6 +111,7 @@ export const projects = [
     root: "jaktrans",
     page: JakTrans,
     desc: "Your all-in-one solution for Jakarta travel needs. Access routes, schedules, and transportation types effortlessly. Plan your journey with ease, all in one app. Discover comfort and convenience at your fingertips!",
+    metaDesc: "Case study: Designing a unified mobile platform for Jakarta's public transportation — routes, schedules, and real-time tracking in one app.",
     img: jaktrans,
     tags: ["UI/UX", "FE"],
     actions: [
@@ -125,6 +127,7 @@ export const projects = [
     root: "rwpintar",
     page: RwPintar,
     desc: "Database website for storing data and letters belonging to residents of Batu Ceper, Central Jakarta, not only that, this website also has several features including RW complaint services, discussion forums, and also blogs for traders there.",
+    metaDesc: "Case study: Designing a community database website for Batu Ceper residents with complaint services, forums, and blogs.",
     img: rwpintar,
     tags: ["UI/UX"],
     actions: [

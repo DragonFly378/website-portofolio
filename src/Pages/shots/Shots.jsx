@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import SEO from "../../Components/SEO";
 import Layout from "../../Layout/Layout";
 import { shots } from "../../datas";
 import ShotCard from "../../Components/ShotCard";
@@ -8,6 +9,11 @@ const Shots = React.memo(() => {
 
   return (
     <Layout>
+      <SEO
+        title="Design Shots - Muhammad Hafiz Hisbullah"
+        description="A collection of UI experiments, concept designs, and creative explorations by Muhammad Hafiz Hisbullah."
+        path="/shots"
+      />
       <section className="shots-section relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-20 -left-32 w-64 h-64 bg-orange/5 rounded-full blur-3xl"></div>

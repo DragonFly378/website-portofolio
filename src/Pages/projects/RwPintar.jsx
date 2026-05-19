@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../../Components/SEO";
 import Layout from "../../Layout/Layout";
 import headerImg from "../../assets/img/projects/rwpintar/header.png";
 import interviewResultImg from "../../assets/img/projects/rwpintar/interview_result.png";
@@ -16,6 +17,11 @@ const RwPintar = () => {
   return (
     <>
       <Layout>
+        <SEO
+          title="RW Pintar - Community Database | Muhammad Hafiz Hisbullah"
+          description="Case study: Designing a community database website for Batu Ceper residents with complaint services, forums, and blogs."
+          path="/project/rwpintar"
+        />
         <section className="work-rwpintar my-8 lg:my-16">
           <div className="w-11/12 lg:w-8/12 mx-auto">
             <div className="flex flex-col gap-y-14">

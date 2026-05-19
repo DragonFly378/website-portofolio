@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../Components/SEO";
 import Layout from "../Layout/Layout";
 
 import img from "../assets/img/apis.png";
@@ -10,6 +11,11 @@ export const About = ({ page }) => {
     <>
       {page ? (
         <Layout>
+          <SEO
+            title="About - Muhammad Hafiz Hisbullah"
+            description="Learn about Muhammad Hafiz Hisbullah — Product Designer & Frontend Developer with a passion for creating user-friendly digital experiences."
+            path="/about"
+          />
           <div className="flex flex-col my-8 lg:my-10">
             <Jumbotron />
             <AboutContent />

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
+import SEO from "../../Components/SEO";
 import { useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 import Layout from "../../Layout/Layout";
@@ -35,6 +36,11 @@ const ShotsDetail = React.memo(() => {
 
   return (
     <Layout>
+      <SEO
+        title={`${shotNow.title} - Design Shots | Muhammad Hafiz Hisbullah`}
+        description={shotNow.desc}
+        path={`/shots/${id}`}
+      />
       <section className="shot-detail relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-10 -left-20 w-64 h-64 bg-orange/5 rounded-full blur-3xl"></div>

@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../../Components/SEO";
 import Layout from "../../Layout/Layout";
 import logoImg from "../../assets/img/projects/ccphase/logo_bedge_ui.png";
 import extHome from "../../assets/img/projects/ccphase/ext_Home Page.png";
@@ -18,6 +19,11 @@ const CCPHASE = React.memo(() => {
   return (
     <>
       <Layout>
+        <SEO
+          title="CCPHASE - FIK UI | Muhammad Hafiz Hisbullah"
+          description="Case study: Designing two website systems for CCPHASE, a climate change and health research cluster under FIK Universitas Indonesia."
+          path="/project/ccphase"
+        />
         <section className="work-ccphase my-8 lg:my-16">
           <div className="w-11/12 lg:w-8/12 mx-auto">
             <div className="flex flex-col gap-y-16 lg:gap-y-24">
@@ -171,7 +177,7 @@ const CCPHASE = React.memo(() => {
                           "Global Partner Network (WHO, Harvard, etc.)",
                         ].map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <span className="text-orange flex-shrink-0">-></span>
+                            <span className="text-orange flex-shrink-0">{"→"}</span>
                             <span className="text-sm lg:text-base text-light-blue">{item}</span>
                           </div>
                         ))}
@@ -188,7 +194,7 @@ const CCPHASE = React.memo(() => {
                           "Internal staff managing day-to-day content",
                         ].map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <span className="text-orange flex-shrink-0">-></span>
+                            <span className="text-orange flex-shrink-0">{"→"}</span>
                             <span className="text-sm lg:text-base text-light-blue">{item}</span>
                           </div>
                         ))}
@@ -260,7 +266,7 @@ const CCPHASE = React.memo(() => {
                       { bold: "Scalable vs. Current", desc: "Research, publications, and team members will keep growing — the system needs to handle that gracefully." },
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <span className="text-orange text-xl flex-shrink-0">-></span>
+                        <span className="text-orange text-xl flex-shrink-0">{"→"}</span>
                         <span><strong className="text-orange">{item.bold}:</strong> {item.desc}</span>
                       </li>
                     ))}
@@ -375,7 +381,7 @@ const CCPHASE = React.memo(() => {
                       rel="noreferrer"
                       className="inline-flex items-center gap-2 bg-orange/10 hover:bg-orange text-light-blue hover:text-dark-blue border-2 border-orange px-5 py-2 rounded-full font-semibold text-sm transition-all duration-300 w-fit"
                     >
-                      Visit Live Site ->
+                      {"Visit Live Site →"}
                     </a>
                   </div>
                   <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">
@@ -419,7 +425,7 @@ const CCPHASE = React.memo(() => {
                       rel="noreferrer"
                       className="inline-flex items-center gap-2 bg-orange/10 hover:bg-orange text-light-blue hover:text-dark-blue border-2 border-orange px-5 py-2 rounded-full font-semibold text-sm transition-all duration-300 w-fit"
                     >
-                      Visit Live Site ->
+                      {"Visit Live Site →"}
                     </a>
                   </div>
                   <div className="desc text-light-blue text-base lg:text-lg leading-7 lg:leading-9">

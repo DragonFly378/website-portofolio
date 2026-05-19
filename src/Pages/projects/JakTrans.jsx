@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../../Components/SEO";
 import Layout from "../../Layout/Layout";
 import headerImg from "../../assets/img/projects/jaktrans/banner_jaktrans.png";
 import discover from "../../assets/img/projects/jaktrans/discover.png";
@@ -29,6 +30,11 @@ const JakTrans = React.memo(() => {
   return (
     <>
       <Layout>
+        <SEO
+          title="JakTrans - Public Transportation App | Muhammad Hafiz Hisbullah"
+          description="Case study: Designing a unified mobile platform for Jakarta's public transportation — routes, schedules, and real-time tracking in one app."
+          path="/project/jaktrans"
+        />
         <section className="work-jaktrans my-8 lg:my-16">
           <div className="w-11/12 lg:w-8/12 mx-auto">
             <div className="flex flex-col gap-y-16 lg:gap-y-24">

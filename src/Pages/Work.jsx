@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import SEO from "../Components/SEO";
 import WorkContent from "../Components/WorkContent";
 import Layout from "../Layout/Layout";
 import { Link } from "react-router-dom";
@@ -13,6 +14,11 @@ const Work = React.memo(({ page }) => {
     <>
       {page ? (
         <Layout>
+          <SEO
+            title="Projects - Muhammad Hafiz Hisbullah"
+            description="Portfolio of UI/UX design and frontend development projects by Muhammad Hafiz Hisbullah."
+            path="/projects"
+          />
           <section className="work-section my-8 lg:my-24">
             <div className="text-orange text-center text-3xl lg:text-5xl mb-4 font-rodetta tracking-wide">
               Featured Projects
