@@ -24,6 +24,12 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
+import shots_ccphase_cover from "./assets/img/projects/ccphase/ext_Home Page.png";
+import shots_ccphase1 from "./assets/img/projects/ccphase/ext_About Page.png";
+import shots_ccphase2 from "./assets/img/projects/ccphase/ext_Research & Publications.png";
+import shots_ccphase3 from "./assets/img/projects/ccphase/wp_Home Page.png";
+import shots_ccphase4 from "./assets/img/projects/ccphase/ext_Partners.png";
+
 import shots_catatanpintar_cover from "./assets/img/shots/catatanpintar/cover.png";
 import shots_catatanpintar1 from "./assets/img/shots/catatanpintar/drb-1.png";
 import shots_catatanpintar2 from "./assets/img/shots/catatanpintar/drb-2.png";
@@ -246,6 +252,19 @@ export const sosmed = [
 export const shots = [
   {
     id: 1,
+    title: "CCPHASE - FIK UI",
+    cover: shots_ccphase_cover,
+    desc: "Website design for CCPHASE (Climate Change, Planetary Health, and Sustainable Care), a research cluster under the Faculty of Nursing Science, Universitas Indonesia. Two design systems — a clean WordPress variant for internal teams and a premium dark-themed external site for global audiences.",
+    images: [
+      shots_ccphase_cover,
+      shots_ccphase1,
+      shots_ccphase2,
+      shots_ccphase3,
+      shots_ccphase4,
+    ],
+  },
+  {
+    id: 2,
     title: "Catatan Pintar",
     cover: shots_catatanpintar_cover,
     desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
@@ -257,21 +276,21 @@ export const shots = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Cimory Diaryland",
     cover: shots_cimory1,
     desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
     images: [shots_cimory1, shots_cimory2, shots_cimory3, shots_cimory4],
   },
   {
-    id: 3,
+    id: 4,
     title: "Erlangga Learning App",
     cover: shots_erlangga1,
     desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
     images: [shots_erlangga1, shots_erlangga2, shots_erlangga3],
   },
   {
-    id: 4,
+    id: 5,
     title: "Foodymeal",
     cover: shots_foodymeal3,
     desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
@@ -283,7 +302,7 @@ export const shots = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "TOTAL PRIME ENGINEERING",
     cover: shots_totalprime1,
     desc: "Introducing our education website design! Catatan Pintar is a website platform for those who want to be useful anytime and anywhere by sharing their study notes to help friends learn and achieve success with the notes they have.",
