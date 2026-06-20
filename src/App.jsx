@@ -11,6 +11,7 @@ const Contact = lazy(() => import("./Pages/Contact"));
 const Shots = lazy(() => import("./Pages/shots/Shots"));
 const ShotsDetail = lazy(() => import("./Pages/shots/ShotsDetail"));
 const Link = lazy(() => import("./Pages/Link"));
+const Summary = lazy(() => import("./Pages/Summary"));
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -43,6 +44,7 @@ function App() {
           <Route path="/shots/:id" element={<ShotsDetail />} />
           <Route path="/about" element={<About page={true} />} />
           <Route path="/contact" element={<Contact page={true} />} />
+          <Route path="/summary" element={<Summary />} />
           {projects.map((project, projectId) => (
             <Route
               key={projectId}
