@@ -1,7 +1,31 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Layout from "../Layout/Layout";
 import MarkdownRenderer from "../Components/MarkdownRenderer";
 import { api } from "../lib/api";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBold,
+  faItalic,
+  faHeading,
+  faLink,
+  faImage,
+  faQuoteLeft,
+  faCode,
+  faListUl,
+  faListOl,
+} from "@fortawesome/free-solid-svg-icons";
+
+const TOOLBAR_ITEMS = [
+  { type: "bold", icon: faBold, label: "Bold" },
+  { type: "italic", icon: faItalic, label: "Italic" },
+  { type: "h2", icon: faHeading, label: "Heading" },
+  { type: "quote", icon: faQuoteLeft, label: "Quote" },
+  { type: "code", icon: faCode, label: "Code" },
+  { type: "link", icon: faLink, label: "Link" },
+  { type: "image", icon: faImage, label: "Image" },
+  { type: "ul", icon: faListUl, label: "Bullet list" },
+  { type: "ol", icon: faListOl, label: "Numbered list" },
+];
 
 const emptyForm = {
   id: null,
@@ -23,6 +47,7 @@ const Write = React.memo(() => {
   const [tab, setTab] = useState("write"); // write | preview
   const [saving, setSaving] = useState(false);
   const [formError, setFormError] = useState("");
+  const contentRef = useRef(null);
 
   const refreshArticles = useCallback(() => {
     api.listAdminArticles().then(setArticles).catch(() => {});
@@ -117,6 +142,86 @@ const Write = React.memo(() => {
     },
     [form, refreshArticles]
   );
+
+  const applyMarkdown = useCallback((type) => {
+    const textarea = contentRef.current;
+    if (!textarea) return;
+
+    const { selectionStart, selectionEnd, value } = textarea;
+    const selected = value.slice(selectionStart, selectionEnd);
+
+    let insertText = selected;
+    let selStart = selectionStart;
+    let selEnd = selectionEnd;
+
+    const place = (text, relStart, relLength) => {
+      insertText = text;
+      selStart = selectionStart + relStart;
+      selEnd = selStart + relLength;
+    };
+
+    switch (type) {
+      case "bold": {
+        const label = selected || "teks tebal";
+        place(`**${label}**`, 2, label.length);
+        break;
+      }
+      case "italic": {
+        const label = selected || "teks miring";
+        place(`*${label}*`, 1, label.length);
+        break;
+      }
+      case "h2": {
+        const label = selected || "Judul";
+        place(`## ${label}`, 3, label.length);
+        break;
+      }
+      case "quote": {
+        const label = selected || "Kutipan";
+        place(`> ${label}`, 2, label.length);
+        break;
+      }
+      case "code": {
+        const label = selected || "kode";
+        if (label.includes("\n")) {
+          place(`\`\`\`\n${label}\n\`\`\``, 4, label.length);
+        } else {
+          place(`\`${label}\``, 1, label.length);
+        }
+        break;
+      }
+      case "link": {
+        const label = selected || "teks link";
+        place(`[${label}](url)`, label.length + 3, 3);
+        break;
+      }
+      case "image": {
+        const label = selected || "alt text";
+        place(`![${label}](url)`, label.length + 4, 3);
+        break;
+      }
+      case "ul": {
+        const label = selected || "poin";
+        place(`- ${label}`, 2, label.length);
+        break;
+      }
+      case "ol": {
+        const label = selected || "poin";
+        place(`1. ${label}`, 3, label.length);
+        break;
+      }
+      default:
+        return;
+    }
+
+    const newValue = value.slice(0, selectionStart) + insertText + value.slice(selectionEnd);
+    setForm((prev) => ({ ...prev, content: newValue }));
+
+    requestAnimationFrame(() => {
+      textarea.focus();
+      textarea.setSelectionRange(selStart, selEnd);
+    });
+  }, []);
 
   const handleDelete = useCallback(async () => {
     if (!form.id) return;
@@ -289,15 +394,33 @@ const Write = React.memo(() => {
             </div>
 
             {tab === "write" ? (
-              <textarea
-                value={form.content}
-                onChange={handleField("content")}
-                placeholder="Tulis dengan Markdown..."
-                rows={18}
-                className="bg-dark-blue/30 border border-orange/20 rounded-lg px-4 py-3
-                           text-light-blue font-mono text-sm leading-6 resize-y
-                           focus:outline-none focus:border-orange transition-colors duration-300"
-              />
+              <div className="flex flex-col">
+                <div className="flex flex-wrap gap-1 bg-dark-blue/30 border border-orange/20 border-b-0 rounded-t-lg px-2 py-2">
+                  {TOOLBAR_ITEMS.map((item) => (
+                    <button
+                      key={item.type}
+                      type="button"
+                      title={item.label}
+                      aria-label={item.label}
+                      onClick={() => applyMarkdown(item.type)}
+                      className="w-8 h-8 flex items-center justify-center rounded-md text-light-blue/70
+                                 hover:text-orange hover:bg-orange/10 transition-colors duration-300"
+                    >
+                      <FontAwesomeIcon icon={item.icon} className="text-sm" />
+                    </button>
+                  ))}
+                </div>
+                <textarea
+                  ref={contentRef}
+                  value={form.content}
+                  onChange={handleField("content")}
+                  placeholder="Tulis dengan Markdown..."
+                  rows={18}
+                  className="bg-dark-blue/30 border border-orange/20 rounded-b-lg px-4 py-3
+                             text-light-blue font-mono text-sm leading-6 resize-y
+                             focus:outline-none focus:border-orange transition-colors duration-300"
+                />
+              </div>
             ) : (
               <div className="bg-dark-blue/30 border border-orange/20 rounded-lg px-6 py-4 min-h-[300px]">
                 {form.content ? (
