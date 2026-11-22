@@ -48,6 +48,8 @@ const Write = React.memo(() => {
   const [tab, setTab] = useState("write"); // write | preview
   const [saving, setSaving] = useState(false);
   const [formError, setFormError] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const successTimeoutRef = useRef(null);
   const contentRef = useRef(null);
 
   const refreshArticles = useCallback(() => {
@@ -63,6 +65,8 @@ const Write = React.memo(() => {
       })
       .catch(() => setAuthed(false));
   }, [refreshArticles]);
+
+  useEffect(() => () => clearTimeout(successTimeoutRef.current), []);
 
   const handleLogin = useCallback(
     async (e) => {
@@ -99,6 +103,7 @@ const Write = React.memo(() => {
       status: data.status,
     });
     setFormError("");
+    setSuccessMessage("");
     setTab("write");
   }, []);
 
@@ -109,6 +114,7 @@ const Write = React.memo(() => {
   const handleSave = useCallback(
     async (status) => {
       setFormError("");
+      setSuccessMessage("");
 
       if (!form.title || !form.excerpt || !form.content) {
         setFormError("Judul, excerpt, dan konten wajib diisi.");
@@ -135,6 +141,10 @@ const Write = React.memo(() => {
 
         setForm((prev) => ({ ...prev, id: saved.id, status: saved.status }));
         refreshArticles();
+
+        setSuccessMessage(status === "published" ? "Published." : "Draft tersimpan.");
+        clearTimeout(successTimeoutRef.current);
+        successTimeoutRef.current = setTimeout(() => setSuccessMessage(""), 3000);
       } catch (err) {
         setFormError(err.message);
       } finally {
@@ -297,6 +307,7 @@ const Write = React.memo(() => {
               onClick={() => {
                 setForm(emptyForm);
                 setFormError("");
+                setSuccessMessage("");
                 setTab("write");
               }}
               className="bg-orange/10 hover:bg-orange text-light-blue hover:text-dark-blue
@@ -435,6 +446,9 @@ const Write = React.memo(() => {
             )}
 
             {formError && <p className="text-red text-sm">{formError}</p>}
+            {successMessage && (
+              <p className="text-orange text-sm font-semibold">{successMessage}</p>
+            )}
 
             <div className="flex flex-wrap items-center gap-4 mt-2">
               <button
