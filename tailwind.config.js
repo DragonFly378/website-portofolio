@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       nunito: ["Nunito"],
       rodetta: ["Rodetta"],
+      serif: ["Lora", "ui-serif", "Georgia", "serif"],
     },
     extend: {
       colors: {
@@ -13,6 +14,16 @@ module.exports = {
         "light-blue": "#CCE8E6",
         ungu: "#6590FE",
         red: "#A13323",
+
+        // Blog reading environment — deliberately distinct from the brand
+        // teal/orange used everywhere else, so /blog reads like its own
+        // "ink on paper at night" space.
+        "blog-bg": "var(--blog-bg)",
+        "blog-ink": "var(--blog-ink)",
+        "blog-ink-soft": "var(--blog-ink-soft)",
+        "blog-muted": "var(--blog-muted)",
+        "blog-accent": "var(--blog-accent)",
+        "blog-hairline": "var(--blog-hairline)",
       },
       screens: {
         sm: "640px",

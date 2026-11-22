@@ -12,6 +12,9 @@ const Shots = lazy(() => import("./Pages/shots/Shots"));
 const ShotsDetail = lazy(() => import("./Pages/shots/ShotsDetail"));
 const Link = lazy(() => import("./Pages/Link"));
 const Summary = lazy(() => import("./Pages/Summary"));
+const Blog = lazy(() => import("./Pages/Blog"));
+const BlogDetail = lazy(() => import("./Pages/BlogDetail"));
+const Write = lazy(() => import("./Pages/Write"));
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -42,6 +45,9 @@ function App() {
           <Route path="/projects" element={<Work page={true} />} />
           <Route path="/shots" element={<Shots />} />
           <Route path="/shots/:id" element={<ShotsDetail />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="/write" element={<Write />} />
           <Route path="/about" element={<About page={true} />} />
           <Route path="/contact" element={<Contact page={true} />} />
           <Route path="/summary" element={<Summary />} />

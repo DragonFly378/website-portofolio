@@ -13,6 +13,7 @@ const Navbar = React.memo(({ active }) => {
     { name: "Home", value: "/" },
     { name: "Projects", value: "/projects" },
     { name: "Shots", value: "/shots" },
+    { name: "Blog", value: "/blog" },
     {
       name: "Contact me 🤙",
       value: "/contact",
