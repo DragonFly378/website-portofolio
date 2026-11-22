@@ -61,6 +61,17 @@ const BlogDetail = React.memo(() => {
         description={article.excerpt}
         path={`/blog/${slug}`}
         image={article.cover_url || undefined}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: article.title,
+          description: article.excerpt,
+          image: article.cover_url || undefined,
+          datePublished: article.published_at,
+          dateModified: article.updated_at || article.published_at,
+          author: { "@type": "Person", name: "Muhammad Hafiz Hisbullah", url: "https://hafizhb.com" },
+          mainEntityOfPage: `https://hafizhb.com/blog/${slug}`,
+        }}
       />
       <article className="blog-detail bg-blog-bg">
         <div className="w-11/12 lg:w-7/12 mx-auto max-w-[720px] py-12 lg:py-20">

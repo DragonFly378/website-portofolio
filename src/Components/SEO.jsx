@@ -9,7 +9,14 @@ const DEFAULT_DESC =
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.png`;
 
 const SEO = React.memo(
-  ({ title = DEFAULT_TITLE, description = DEFAULT_DESC, path = "/", image = DEFAULT_IMAGE }) => {
+  ({
+    title = DEFAULT_TITLE,
+    description = DEFAULT_DESC,
+    path = "/",
+    image = DEFAULT_IMAGE,
+    noindex = false,
+    jsonLd,
+  }) => {
     const url = `${BASE_URL}${path}`;
 
     return (
@@ -18,6 +25,7 @@ const SEO = React.memo(
         <meta name="title" content={title} />
         <meta name="description" content={description} />
         <link rel="canonical" href={url} />
+        {noindex && <meta name="robots" content="noindex, nofollow" />}
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
@@ -30,6 +38,8 @@ const SEO = React.memo(
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+
+        {jsonLd && <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>}
       </Helmet>
     );
   }

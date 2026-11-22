@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Layout from "../Layout/Layout";
+import SEO from "../Components/SEO";
 import MarkdownRenderer from "../Components/MarkdownRenderer";
 import { api } from "../lib/api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -245,6 +246,7 @@ const Write = React.memo(() => {
   if (!authed) {
     return (
       <Layout>
+        <SEO title="Write" path="/write" noindex />
         <div className="flex items-center justify-center min-h-[70vh] px-6">
           <form
             onSubmit={handleLogin}
@@ -276,6 +278,7 @@ const Write = React.memo(() => {
 
   return (
     <Layout>
+      <SEO title="Write" path="/write" noindex />
       <section className="write-section w-11/12 xl:w-10/12 mx-auto my-8 lg:my-12">
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-orange text-2xl lg:text-3xl font-rodetta">Write</h1>

@@ -1,0 +1,18 @@
+# Muhammad Hafiz Hisbullah
+
+> Product Designer & Frontend Developer based in Indonesia, working across UI/UX design and React/frontend development.
+
+Personal portfolio and blog. The portfolio showcases UI/UX and frontend case studies; the blog is informal, personal writing not limited to any one topic.
+
+## Key pages
+
+- [Home](https://hafizhb.com/): introduction and featured work
+- [Projects](https://hafizhb.com/projects): UI/UX and frontend case studies
+- [Shots](https://hafizhb.com/shots): design exploration and concept work
+- [About](https://hafizhb.com/about): background and skills
+- [Contact](https://hafizhb.com/contact): ways to get in touch
+- [Blog](https://hafizhb.com/blog): personal writing
+
+## Recent blog posts
+
+- [The Three Pillars of a Healthy Lifestyle](https://hafizhb.com/blog/the-three-pillars-of-a-healthy-lifestyle): Talk about 3 facts about your life more healthy
