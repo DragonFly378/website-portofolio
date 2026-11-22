@@ -25,7 +25,7 @@ const BlogNavbar = React.memo(({ active }) => {
       {/* mobile */}
       <div className="lg:hidden w-11/12 mx-auto py-5 flex items-center justify-between">
         <Link to="/" className="font-serif italic text-blog-accent text-xl">
-          dragonfly378.
+          hafizhb.
         </Link>
         <div className="flex items-center gap-x-3">
           <BlogThemeToggle />
@@ -59,7 +59,7 @@ const BlogNavbar = React.memo(({ active }) => {
       {/* desktop */}
       <div className="hidden lg:flex items-center justify-between w-11/12 xl:w-8/12 mx-auto py-6">
         <Link to="/" className="font-serif italic text-blog-accent text-2xl">
-          dragonfly378.
+          hafizhb.
         </Link>
         <div className="flex items-center gap-x-8">
           <nav className="flex gap-x-8 text-sm">

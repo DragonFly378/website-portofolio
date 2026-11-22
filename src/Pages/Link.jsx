@@ -95,7 +95,7 @@ const Link = () => {
     },
     {
       title: "Hafiz's Portfolio",
-      url: "https://dragonfly378.my.id",
+      url: "https://hafizhb.com",
       description: "Portfolio pribadi Muhammad Hafiz Hisbullah",
       emoji: "💼",
     },

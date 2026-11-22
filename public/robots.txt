@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://hafizhisbullah.com/sitemap.xml
+Sitemap: https://hafizhb.com/sitemap.xml

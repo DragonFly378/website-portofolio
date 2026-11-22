@@ -22,7 +22,7 @@ const Blog = React.memo(() => {
     <BlogLayout>
       <SEO
         title="Blog - Muhammad Hafiz Hisbullah"
-        description="Tulisan tentang desain, kode, dan proses di baliknya — dari Muhammad Hafiz Hisbullah."
+        description="Apa aja yang lagi ada di kepala Muhammad Hafiz Hisbullah — gak dibatasin topik tertentu."
         path="/blog"
       />
       <section className="blog-section bg-blog-bg">
@@ -31,8 +31,10 @@ const Blog = React.memo(() => {
             <h1 className="text-blog-accent text-4xl lg:text-5xl font-rodetta tracking-wide">
               Blog
             </h1>
-            <p className="text-blog-muted text-base lg:text-lg mt-2">
-              Tulisan tentang desain, kode, dan proses di baliknya.
+            <p className="text-blog-muted text-base lg:text-lg leading-7 mt-3 max-w-[60ch]">
+              Ruang buat nuangin apa aja yang lagi ada di kepala gue — gak harus soal
+              desain atau kerjaan. Kadang cerita random, kadang refleksi, kadang cuma
+              pengen nulis biar inget.
             </p>
             <div className="h-px bg-blog-hairline mt-8"></div>
           </header>
